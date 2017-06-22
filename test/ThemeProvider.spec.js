@@ -5,6 +5,17 @@ import styled from 'styled-components';
 import ThemeProvider from '../src/ThemeProvider';
 
 describe('ThemeProvider', () => {
+  it('should provide a default theme', () => {
+    const Button = styled.button`${props => expect(props.theme).toMatch({
+      palette: {},
+    })}`;
+    ReactTestUtils.renderIntoDocument(
+      <ThemeProvider>
+        <Button />
+      </ThemeProvider>,
+    );
+  });
+
   it('should provide a merged theme', () => {
     const Button = styled.button`${props => expect(props.theme).toMatch({
       foo: 'bar',

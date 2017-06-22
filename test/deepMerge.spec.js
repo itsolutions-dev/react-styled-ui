@@ -5,6 +5,7 @@ describe('deepMerge', () => {
   const master = {
     foo: 'foo',
     bar: 'bar',
+    arr: [1, 2, 3],
     baz: {
       foo: 'foo',
       bar: 'bar',
@@ -31,6 +32,7 @@ describe('deepMerge', () => {
     expect(
       deepMerge(master, {
         foo: 'oof',
+        arr: [0, 1, 2],
         baz: {
           bar: 'rab',
           baz: {
@@ -41,6 +43,7 @@ describe('deepMerge', () => {
     ).toEqual({
       foo: 'oof',
       bar: 'bar',
+      arr: [0, 1, 2],
       baz: {
         foo: 'foo',
         bar: 'rab',
@@ -51,5 +54,13 @@ describe('deepMerge', () => {
         },
       },
     });
+  });
+
+  it('should preserve equal properties', () => {
+    expect(
+      deepMerge(master, {
+        foo: 'foo',
+      }),
+    ).toEqual(master);
   });
 });
