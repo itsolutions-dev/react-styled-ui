@@ -2,7 +2,7 @@ import React from 'react';
 import ReactTestUtils from 'react-dom/test-utils';
 import ReactTestRenderer from 'react-test-renderer';
 import Button from '../src/Button';
-import './testUtils/toHaveStyleRule';
+import './testUtils/jest';
 
 describe('Button', () => {
   test('should render a Button', () => {

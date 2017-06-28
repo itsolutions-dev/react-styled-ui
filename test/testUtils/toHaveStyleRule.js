@@ -1,6 +1,6 @@
 /* eslint-disable one-var, no-useless-escape, no-underscore-dangle */
 
-import styleSheet from 'styled-components/lib/models/StyleSheet';
+import getCSS from './getCSS';
 
 const testError = {
   pass: false,
@@ -39,9 +39,9 @@ const findClassName = (actual) => {
   return className;
 };
 
-const testStyleRule = (actual, selector, expected) => {
+const toHaveStyleRule = (actual, selector, expected) => {
   const className = findClassName(actual);
-  const css = styleSheet.instance.tags[0].el.innerHTML;
+  const css = getCSS();
   const styles = new RegExp(`${className}\s?{([^}]*)`, 'g').exec(css);
   const capture = new RegExp(`(?:[^\-]|^)${selector}:[\s]*([^;]+)`, 'g');
 
@@ -59,29 +59,4 @@ const testStyleRule = (actual, selector, expected) => {
   };
 };
 
-// jest
-expect.extend({
-  toHaveStyleRule(actual, selector, expected) {
-    const test = testStyleRule(actual, selector, expected);
-
-    test.message = `Expected ${selector} matching ${expected} received: ${test.actual}`;
-
-    return test;
-  },
-});
-
-// extend
-/* expect.extend({
-  toHaveStyleRule(selector, expected) {
-    const test = testStyleRule(this.actual, selector, expected);
-
-    expect.assert(
-      test.pass,
-      'Expected %s matching %s received: %s',
-      selector,
-      expected,
-      test.actual,
-    );
-    return this;
-  },
-}); */
+export default toHaveStyleRule;
