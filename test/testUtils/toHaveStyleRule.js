@@ -3,12 +3,15 @@
 import expect from 'expect';
 import styleSheet from 'styled-components/lib/models/StyleSheet';
 
+const testError = {
+  pass: false,
+};
+
 const findClassName = (actual) => {
   let className = '';
 
   const component = actual.component || actual;
 
-  // constructor.name doesnt work in older versions of node
   if (component.constructor && typeof component.toJSON === 'function') {
     // react test renderer
     className = component.toJSON().props.className;
@@ -29,7 +32,6 @@ const findClassName = (actual) => {
     }
   }
 
-  // styled components adds the className on the end.
   className = className.split(' ').pop();
 
   if (actual.modifier) {
@@ -38,39 +40,36 @@ const findClassName = (actual) => {
   return className;
 };
 
-const hasStyle = (styles, capture, value) => {
-  if (styles && styles[1].match(capture)) {
-    const values = styles[1]
-      .match(capture)
-      .map(r => r.replace(capture, '$1').trim());
+const testStyleRule = (actual, selector, expected) => {
+  const className = findClassName(actual);
+  const css = styleSheet.instance.tags[0].el.innerHTML;
+  const styles = new RegExp(`${className}\s?{([^}]*)`, 'g').exec(css);
+  const capture = new RegExp(`(?:[^\-]|^)${selector}:[\s]*([^;]+)`, 'g');
 
-    return (
-      values &&
-      values.some((v) => {
-        if (value instanceof RegExp) {
-          return v.match(value);
-        }
+  const matches = styles && styles[1].match(capture);
+  if (!matches) return testError;
 
-        return v === value;
-      })
-    );
-  }
-  return false;
+  const values = matches.map(r => r.replace(capture, '$1').trim());
+  if (!values) return testError;
+
+  return {
+    actual: values && values[0],
+    pass: values.some(
+      v => (expected instanceof RegExp ? v.match(expected) : v === expected),
+    ),
+  };
 };
 
 expect.extend({
-  toHaveStyleRule(selector, value) {
-    const className = findClassName(this.actual);
-    const css = styleSheet.instance.tags[0].el.innerHTML;
-    const styles = new RegExp(`${className}\s?{([^}]*)`, 'g').exec(css);
-    const capture = new RegExp(`${selector}:[\s]*([^;]+)`, 'g');
+  toHaveStyleRule(selector, expected) {
+    const test = testStyleRule(this.actual, selector, expected);
+
     expect.assert(
-      hasStyle(styles, capture, value),
-      'Expected %s to have %s matching %s received: %s',
-      className,
+      test.pass,
+      'Expected %s matching %s received: %s',
       selector,
-      value,
-      (styles && styles[1]) || css,
+      expected,
+      test.actual,
     );
     return this;
   },
