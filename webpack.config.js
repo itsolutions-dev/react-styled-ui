@@ -29,7 +29,7 @@ module.exports = env => {
     },
     plugins: removeEmpty([
       new webpack.optimize.OccurrenceOrderPlugin(),
-      ifProd(new webpack.optimize.DedupePlugin()),
+      ifProd(new webpack.optimize.ModuleConcatenationPlugin()),
       ifProd(
         new webpack.LoaderOptionsPlugin({
           minimize: true,

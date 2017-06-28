@@ -18,8 +18,8 @@
     "check:src": "npm run lint && npm run test",
     "build:commonjs": "cross-env BABEL_ENV=commonjs babel src -d lib",
     "build:es": "cross-env BABEL_ENV=es babel src -d es",
-    "build:umd": "cross-env BABEL_ENV=commonjs NODE_ENV=development webpack src/index.js dist/react-styled-ui.js",
-    "build:umd:min": "cross-env BABEL_ENV=commonjs NODE_ENV=production webpack src/index.js dist/react-styled-ui.min.js",
+    "build:umd": "cross-env BABEL_ENV=commonjs NODE_ENV=development webpack --env.prod src/index.js dist/react-styled-ui.js",
+    "build:umd:min": "cross-env BABEL_ENV=commonjs NODE_ENV=production webpack --env.prod src/index.js dist/react-styled-ui.min.js",
     "build": "npm run build:commonjs && npm run build:es && npm run build:umd && npm run build:umd:min",
     "prepublish": "npm run clean && npm run check:src && npm run build && check-es3-syntax lib/ dist/ --kill",
     "flow": "flow check",
@@ -76,8 +76,6 @@
     "jest": "20.0.4",
     "jsdom": "10.1.0",
     "nyc": "10.3.0",
-    "prepack": "0.2.2",
-    "prepack-webpack-plugin": "1.1.0",
     "prettier": "1.2.2",
     "prettier-eslint": "6.1.2",
     "react": "15.5.4",
@@ -86,7 +84,7 @@
     "react-test-renderer": "15.5.4",
     "rimraf": "2.6.1",
     "styled-components": "2.1.0",
-    "webpack": "2.4.1"
+    "webpack": "3.0.0"
   },
   "peerDependencies": {
     "react": "^15.5.4",
