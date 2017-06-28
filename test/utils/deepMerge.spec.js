@@ -1,5 +1,5 @@
 import expect from 'expect';
-import deepMerge from '../src/utils/deepMerge';
+import { deepMerge } from '../../src/utils/';
 
 describe('deepMerge', () => {
   const master = {

@@ -1,4 +1,6 @@
-export default function deepMerge(master, custom) {
+// @flow
+
+export default function deepMerge(master: Object, custom: Object) {
   const newConfig = Object.assign({}, master);
   [...Object.keys(master), ...Object.keys(custom)].forEach((x) => {
     if (
