@@ -1,6 +1,7 @@
 import React from 'react';
 import expect from 'expect';
 import ReactTestUtils from 'react-dom/test-utils';
+import ReactTestRenderer from 'react-test-renderer';
 import Button from '../src/Button';
 
 describe('Button', () => {
@@ -11,5 +12,10 @@ describe('Button', () => {
       'button',
     );
     expect(component).toExist();
+  });
+
+  it('should have a color', () => {
+    const component = ReactTestRenderer.create(<Button />);
+    expect(component).toHaveStyleRule('color', 'blue');
   });
 });
