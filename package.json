@@ -1,6 +1,6 @@
 {
   "name": "react-styled-ui",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Set of React Components that use styled-components",
   "main": "lib/index.js",
   "jsnext:main": "es/index.js",
