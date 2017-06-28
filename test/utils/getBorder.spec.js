@@ -1,4 +1,3 @@
-import expect from 'expect';
 import { getBorder } from '../../src/utils/';
 
 describe('getBorder', () => {
@@ -10,7 +9,7 @@ describe('getBorder', () => {
     },
   };
 
-  it('should get default', () => {
+  test('should get default', () => {
     expect(
       getBorder({
         theme,
@@ -18,7 +17,7 @@ describe('getBorder', () => {
     ).toEqual(theme.palette.defaultBorder);
   });
 
-  it('should get primary', () => {
+  test('should get primary', () => {
     expect(
       getBorder({
         primary: true,
@@ -27,7 +26,7 @@ describe('getBorder', () => {
     ).toEqual(theme.palette.primaryBorder);
   });
 
-  it('should get secondary', () => {
+  test('should get secondary', () => {
     expect(
       getBorder({
         secondary: true,
@@ -36,7 +35,7 @@ describe('getBorder', () => {
     ).toEqual(theme.palette.secondaryBorder);
   });
 
-  it('should get from props', () => {
+  test('should get from props', () => {
     expect(
       getBorder({
         borderColor: 'yellow',

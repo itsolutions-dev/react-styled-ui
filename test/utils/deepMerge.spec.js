@@ -1,4 +1,3 @@
-import expect from 'expect';
 import { deepMerge } from '../../src/utils/';
 
 describe('deepMerge', () => {
@@ -17,7 +16,7 @@ describe('deepMerge', () => {
     },
   };
 
-  it('should add unknown props', () => {
+  test('should add unknown props', () => {
     expect(
       deepMerge(master, {
         example: 'example',
@@ -28,7 +27,7 @@ describe('deepMerge', () => {
     });
   });
 
-  it('should overwrite existing props', () => {
+  test('should overwrite existing props', () => {
     expect(
       deepMerge(master, {
         foo: 'oof',
@@ -56,7 +55,7 @@ describe('deepMerge', () => {
     });
   });
 
-  it('should preserve equal properties', () => {
+  test('should preserve equal properties', () => {
     expect(
       deepMerge(master, {
         foo: 'foo',

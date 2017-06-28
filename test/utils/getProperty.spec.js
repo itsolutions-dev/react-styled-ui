@@ -1,4 +1,3 @@
-import expect from 'expect';
 import { getProperty } from '../../src/utils/';
 
 describe('getProperty', () => {
@@ -10,7 +9,7 @@ describe('getProperty', () => {
     },
   };
 
-  it('should get default', () => {
+  test('should get default', () => {
     expect(
       getProperty('Text', {
         theme,
@@ -18,7 +17,7 @@ describe('getProperty', () => {
     ).toEqual(theme.palette.defaultText);
   });
 
-  it('should get primary', () => {
+  test('should get primary', () => {
     expect(
       getProperty('Text', {
         primary: true,
@@ -27,7 +26,7 @@ describe('getProperty', () => {
     ).toEqual(theme.palette.primaryText);
   });
 
-  it('should get secondary', () => {
+  test('should get secondary', () => {
     expect(
       getProperty('Text', {
         secondary: true,
@@ -36,7 +35,7 @@ describe('getProperty', () => {
     ).toEqual(theme.palette.secondaryText);
   });
 
-  it('should get from props', () => {
+  test('should get from props', () => {
     expect(
       getProperty('Text', {
         textColor: 'yellow',

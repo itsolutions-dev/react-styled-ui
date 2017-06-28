@@ -1,4 +1,3 @@
-import expect from 'expect';
 import { getTextColor } from '../../src/utils/';
 
 describe('getTextColor', () => {
@@ -10,7 +9,7 @@ describe('getTextColor', () => {
     },
   };
 
-  it('should get default', () => {
+  test('should get default', () => {
     expect(
       getTextColor({
         theme,
@@ -18,7 +17,7 @@ describe('getTextColor', () => {
     ).toEqual(theme.palette.defaultText);
   });
 
-  it('should get primary', () => {
+  test('should get primary', () => {
     expect(
       getTextColor({
         primary: true,
@@ -27,7 +26,7 @@ describe('getTextColor', () => {
     ).toEqual(theme.palette.primaryText);
   });
 
-  it('should get secondary', () => {
+  test('should get secondary', () => {
     expect(
       getTextColor({
         secondary: true,
@@ -36,7 +35,7 @@ describe('getTextColor', () => {
     ).toEqual(theme.palette.secondaryText);
   });
 
-  it('should get from props', () => {
+  test('should get from props', () => {
     expect(
       getTextColor({
         textColor: 'yellow',

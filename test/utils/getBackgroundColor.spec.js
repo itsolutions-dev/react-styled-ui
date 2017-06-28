@@ -1,4 +1,3 @@
-import expect from 'expect';
 import { getBackgroundColor } from '../../src/utils/';
 
 describe('getBackgroundColor', () => {
@@ -10,7 +9,7 @@ describe('getBackgroundColor', () => {
     },
   };
 
-  it('should get default', () => {
+  test('should get default', () => {
     expect(
       getBackgroundColor({
         theme,
@@ -18,7 +17,7 @@ describe('getBackgroundColor', () => {
     ).toEqual(theme.palette.default);
   });
 
-  it('should get primary', () => {
+  test('should get primary', () => {
     expect(
       getBackgroundColor({
         primary: true,
@@ -27,7 +26,7 @@ describe('getBackgroundColor', () => {
     ).toEqual(theme.palette.primary);
   });
 
-  it('should get secondary', () => {
+  test('should get secondary', () => {
     expect(
       getBackgroundColor({
         secondary: true,
@@ -36,7 +35,7 @@ describe('getBackgroundColor', () => {
     ).toEqual(theme.palette.secondary);
   });
 
-  it('should get from props', () => {
+  test('should get from props', () => {
     expect(
       getBackgroundColor({
         backgroundColor: 'yellow',

@@ -1,13 +1,13 @@
-import expect from 'expect';
 import getTheme from '../src/getTheme';
+import defaultTheme from '../src/theme';
 
 describe('getTheme', () => {
-  it('should provide a merged theme', () => {
+  test('should provide a merged theme', () => {
     const theme = { foo: 'bar' };
     const mergedTheme = getTheme(theme);
-    expect(mergedTheme).toMatch({
+    expect(mergedTheme).toEqual({
       foo: 'bar',
-      palette: {},
+      ...defaultTheme,
     });
   });
 });

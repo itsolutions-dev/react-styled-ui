@@ -1,25 +1,25 @@
 import React from 'react';
-import expect from 'expect';
 import ReactTestUtils from 'react-dom/test-utils';
 import ReactTestRenderer from 'react-test-renderer';
 import Button from '../src/Button';
+import './testUtils/toHaveStyleRule';
 
 describe('Button', () => {
-  it('should render a Button', () => {
+  test('should render a Button', () => {
     const rendered = ReactTestUtils.renderIntoDocument(<Button />);
     const component = ReactTestUtils.findRenderedDOMComponentWithTag(
       rendered,
       'button',
     );
-    expect(component).toExist();
+    expect(component).toBeDefined();
   });
 
-  it('should have a color', () => {
+  test('should have a color', () => {
     const component = ReactTestRenderer.create(<Button />);
     expect(component).toHaveStyleRule('color', 'blue');
   });
 
-  it('should have a color hover', () => {
+  test('should have a color hover', () => {
     const component = ReactTestRenderer.create(<Button />);
     expect({
       component,

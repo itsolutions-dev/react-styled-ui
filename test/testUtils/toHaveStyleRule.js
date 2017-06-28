@@ -1,6 +1,5 @@
 /* eslint-disable one-var, no-useless-escape, no-underscore-dangle */
 
-import expect from 'expect';
 import styleSheet from 'styled-components/lib/models/StyleSheet';
 
 const testError = {
@@ -60,7 +59,19 @@ const testStyleRule = (actual, selector, expected) => {
   };
 };
 
+// jest
 expect.extend({
+  toHaveStyleRule(actual, selector, expected) {
+    const test = testStyleRule(actual, selector, expected);
+
+    test.message = `Expected ${selector} matching ${expected} received: ${test.actual}`;
+
+    return test;
+  },
+});
+
+// extend
+/* expect.extend({
   toHaveStyleRule(selector, expected) {
     const test = testStyleRule(this.actual, selector, expected);
 
@@ -73,4 +84,4 @@ expect.extend({
     );
     return this;
   },
-});
+}); */
