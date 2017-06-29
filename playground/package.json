@@ -1,0 +1,78 @@
+{
+  "name": "react-styled-ui-playground",
+  "version": "0.0.1",
+  "description": "react-styled-ui playground",
+  "scripts": {
+    "prestart": "rimraf dist",
+    "start": "webpack-dev-server --env.dev",
+    "lint": "eslint src",
+    "flow": "flow check",
+    "build": "rimraf dist && cross-env BABEL_ENV=commonjs webpack --env.prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsolutions-dev/react-styled-ui.git"
+  },
+  "keywords": [
+    "react",
+    "styled",
+    "styled-components",
+    "presentational components",
+    "ui",
+    "layout",
+    "playground"
+  ],
+  "authors": [
+    "Matteo Basso (https://github.com/mbasso)",
+    "Adriano Buscema (https://github.com/adribusc)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/itsolutions-dev/react-styled-ui/issues"
+  },
+  "homepage": "https://github.com/itsolutions-dev/react-styled-ui",
+  "devDependencies": {
+    "babel-cli": "6.24.1",
+    "babel-core": "6.25.0",
+    "babel-eslint": "7.2.3",
+    "babel-loader": "7.1.0",
+    "babel-plugin-transform-decorators-legacy": "1.3.4",
+    "babel-plugin-transform-es3-member-expression-literals": "6.22.0",
+    "babel-plugin-transform-es3-property-literals": "6.22.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-plugin-transform-object-assign": "6.22.0",
+    "babel-plugin-transform-react-remove-prop-types": "0.4.6",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-flow": "6.23.0",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-0": "6.24.1",
+    "babel-register": "6.24.1",
+    "compression-webpack-plugin": "0.4.0",
+    "cross-env": "5.0.1",
+    "eslint": "3.19.0",
+    "eslint-config-airbnb": "15.0.1",
+    "eslint-config-prettier": "2.2.0",
+    "eslint-plugin-flowtype": "2.34.0",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-jsx-a11y": "5.0.3",
+    "eslint-plugin-react": "7.1.0",
+    "flow-bin": "0.48.0",
+    "html-webpack-plugin": "^2.29.0",
+    "html-webpack-template": "6.0.1",
+    "npm-run-all": "4.0.2",
+    "prettier": "1.4.4",
+    "prettier-eslint": "6.3.0",
+    "raw-loader": "0.5.1",
+    "rimraf": "2.6.1",
+    "webpack": "3.0.0",
+    "webpack-dev-server": "2.5.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "6.23.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-live": "1.7.0",
+    "react-styled-flexboxgrid": "^2.0.3",
+    "styled-components": "^2.1.0"
+  }
+}
