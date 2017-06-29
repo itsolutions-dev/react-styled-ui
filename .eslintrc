@@ -31,6 +31,7 @@
     "describe": false,
     "test": false,
     "expect": false,
+    "jest": false,
     "before": false,
     "beforeEach": false,
     "after": false,

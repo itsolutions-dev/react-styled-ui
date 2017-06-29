@@ -54,7 +54,10 @@ const toHaveStyleRule = (actual, selector, expected) => {
   return {
     actual: values && values[0],
     pass: values.some(
-      v => (expected instanceof RegExp ? v.match(expected) : v === expected),
+      v =>
+        (expected instanceof RegExp
+          ? v.match(expected)
+          : String(v) === String(expected)),
     ),
   };
 };

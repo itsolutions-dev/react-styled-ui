@@ -8,11 +8,11 @@ import {
 
 const Link = styled.a`
   margin: 0 1em;
-  background: ${props => getBackgroundColor(props)};
+  background-color: ${props => getBackgroundColor(props)};
   color: ${props => getTextColor(props)};
   opacity: ${props => getOpacity(props)};
   &:hover {
-    background: ${props => getHover(props)};
+    background-color: ${props => getHover(props)};
   }
 `;
 
