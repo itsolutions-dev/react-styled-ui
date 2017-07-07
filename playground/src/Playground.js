@@ -3,9 +3,10 @@
 import React from 'react';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import ThemeProvider from '../../src/ThemeProvider';
+import theme from '../../src/theme';
 
 const getCode = code => `
-  <ThemeProvider>
+  <ThemeProvider theme={theme}>
     ${code}
   </ThemeProvider>
 `;
@@ -20,6 +21,7 @@ export default ({ code, scope, ...others }: PlaygroundProps) =>
     code={getCode(code)}
     scope={{
       ThemeProvider,
+      theme,
       ...scope,
     }}
     {...others}

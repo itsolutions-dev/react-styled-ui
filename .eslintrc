@@ -9,6 +9,7 @@
   },
   "parser": "babel-eslint",
   "rules": {
+    "no-confusing-arrow": "off",
     "linebreak-style": 0,
     "react/jsx-filename-extension": "off",
     "quotes": [

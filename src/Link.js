@@ -8,11 +8,12 @@ import {
 
 const Link = styled.a`
   margin: 0 1em;
-  background-color: ${props => getBackgroundColor(props)};
+  background-color: ${props => props.transparent === true ? 'transparent' : getBackgroundColor(props)};
   color: ${props => getTextColor(props)};
   opacity: ${props => getOpacity(props)};
+
   &:hover {
-    background-color: ${props => getHover(props)};
+    background-color: ${props => props.transparent === true ? 'transparent' : getHover(props)};
   }
 `;
 

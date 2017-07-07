@@ -1,17 +1,16 @@
 import React from 'react';
-import ReactTestUtils from 'react-dom/test-utils';
 import ReactTestRenderer from 'react-test-renderer';
 import 'styled-components-test-utils/lib/jest';
 import Button from '../src/Button';
 
 describe('Button', () => {
   test('should render a Button', () => {
-    const rendered = ReactTestUtils.renderIntoDocument(<Button />);
-    const component = ReactTestUtils.findRenderedDOMComponentWithTag(
-      rendered,
-      'button',
-    );
+    const component = ReactTestRenderer.create(<Button />);
     expect(component).toBeDefined();
+  });
+
+  test('should have a button tag', () => {
+    expect(Button).toHaveComponent('button');
   });
 
   test('should have a color', () => {
@@ -23,7 +22,7 @@ describe('Button', () => {
     const component = ReactTestRenderer.create(<Button />);
     expect({
       component,
-      modifier: ':hover',
+      modifier: '&:hover',
     }).toHaveStyleRule('color', 'white');
   });
 });
