@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
+import 'styled-components-test-utils/lib/jest';
 import StyleProvider from '../src/StyleProvider';
 import theme from '../src/theme';
-import './testUtils/jest';
 
 describe('StyleProvider', () => {
   test('should provide color', () => {

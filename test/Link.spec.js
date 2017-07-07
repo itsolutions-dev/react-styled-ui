@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactTestUtils from 'react-dom/test-utils';
 import ReactTestRenderer from 'react-test-renderer';
+import 'styled-components-test-utils/lib/jest';
 import theme from '../src/theme';
 import Link from '../src/Link';
 import * as utils from '../src/utils/';
-import './testUtils/jest';
 
 describe('Link', () => {
   test('should render a Link', () => {
@@ -38,10 +38,10 @@ describe('Link', () => {
     );
     expect(component).toHaveStyleRule('color', 'blue');
     expect(component).toHaveStyleRule('background-color', 'white');
-    expect(component).toHaveStyleRule('opacity', 0.75);
+    expect(component).toHaveStyleRule('opacity', '0.75');
     expect({
       component,
-      modifier: ':hover',
+      modifier: '&:hover',
     }).toHaveStyleRule('background-color', 'green');
   });
 });

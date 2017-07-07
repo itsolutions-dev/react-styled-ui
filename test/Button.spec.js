@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactTestUtils from 'react-dom/test-utils';
 import ReactTestRenderer from 'react-test-renderer';
+import 'styled-components-test-utils/lib/jest';
 import Button from '../src/Button';
-import './testUtils/jest';
 
 describe('Button', () => {
   test('should render a Button', () => {
