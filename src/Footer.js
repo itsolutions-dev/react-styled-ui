@@ -1,5 +1,8 @@
 import styled from 'styled-components';
-import { getBackgroundColor, getBorder } from './utils/';
+import {
+  getBackgroundColor,
+  getBorder,
+} from './utils/';
 
 const Footer = styled.footer`
   padding: 15px;
