@@ -9,7 +9,7 @@ const getCode = code => `
   <ThemeProvider theme={theme}>
     ${code}
   </ThemeProvider>
-`.trim();
+`.trim().replace(/^/, '\t');
 
 type PlaygroundProps = {
   code: string,
