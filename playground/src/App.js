@@ -4,8 +4,10 @@ import Playground from './Playground';
 import * as components from '../../src/';
 import ThemeProvider from '../../src/ThemeProvider';
 
+const { Heading } = components;
+
 const Body = styled.div`
-  background-color: #C0C0C0;
+  background-color: #FFFFFF;
 `;
 
 const filePathToComponentName = file =>
@@ -22,10 +24,11 @@ const getExamples = () => {
 export default () => (
   <ThemeProvider>
     <Body>
-      <h1>Playground</h1>
+      <Heading size={1}>Playground</Heading>
       {
         getExamples().map(x => (
           <Playground
+            key={x.name}
             code={x.code}
             scope={{
               [x.name]: components[x.name],

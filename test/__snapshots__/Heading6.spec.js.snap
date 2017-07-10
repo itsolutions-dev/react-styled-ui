@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading6 should match snapshot 1`] = `
+<h6
+  className="sc-bdVaJa dcIYOo"
+/>
+`;

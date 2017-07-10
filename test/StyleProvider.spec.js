@@ -2,12 +2,21 @@ import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
 import 'styled-components-test-utils/lib/jest';
 import StyleProvider from '../src/StyleProvider';
-import theme from '../src/theme';
+import getTheme from '../src/getTheme';
+
+const theme = getTheme({
+  font: {
+    family: 'Roboto, sans-serif',
+  },
+  palette: {
+    defaultText: '#FFFFFF',
+  },
+});
 
 describe('StyleProvider', () => {
   test('should provide color', () => {
     const component = ReactTestRenderer.create(<StyleProvider theme={theme} />);
-    expect(component).toHaveStyleRule('color', 'white');
+    expect(component).toHaveStyleRule('color', '#FFFFFF');
   });
 
   test('should provide font family', () => {

@@ -2,32 +2,32 @@ import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
 import 'styled-components-test-utils/lib/jest';
 import getTheme from '../src/getTheme';
-import Heading5 from '../src/Heading5';
+import Heading6 from '../src/Heading6';
 import * as utils from '../src/utils/';
 
 const theme = getTheme({
-  h5: {
+  h6: {
     fontSize: '29px',
     fontWeight: 900,
     lineHeight: 450,
   },
 });
 
-describe('Heading5', () => {
-  test('should render an Heading5', () => {
-    const component = ReactTestRenderer.create(<Heading5 theme={theme} />);
+describe('Heading6', () => {
+  test('should render an Heading6', () => {
+    const component = ReactTestRenderer.create(<Heading6 theme={theme} />);
     expect(component).toBeDefined();
   });
 
-  test('should have an h5 tag', () => {
-    const component = ReactTestRenderer.create(<Heading5 theme={theme} />).toJSON();
-    expect(component.type).toEqual('h5');
+  test('should have an h6 tag', () => {
+    const component = ReactTestRenderer.create(<Heading6 theme={theme} />).toJSON();
+    expect(component.type).toEqual('h6');
   });
 
   test('should have a color', () => {
     const spy = jest.spyOn(utils, 'getTextColor');
     const component = ReactTestRenderer.create(
-      <Heading5
+      <Heading6
         theme={theme}
         textColor="#FFFFFF"
       />,
@@ -38,7 +38,7 @@ describe('Heading5', () => {
 
   test('should have a font-size', () => {
     const component = ReactTestRenderer.create(
-      <Heading5
+      <Heading6
         theme={theme}
         textColor="#FFFFFF"
       />,
@@ -48,7 +48,7 @@ describe('Heading5', () => {
 
   test('should have a font-weight', () => {
     const component = ReactTestRenderer.create(
-      <Heading5
+      <Heading6
         theme={theme}
         textColor="#FFFFFF"
       />,
@@ -58,7 +58,7 @@ describe('Heading5', () => {
 
   test('should have a line-height', () => {
     const component = ReactTestRenderer.create(
-      <Heading5
+      <Heading6
         theme={theme}
         textColor="#FFFFFF"
       />,
@@ -68,7 +68,7 @@ describe('Heading5', () => {
 
   test('should match snapshot', () => {
     const component = ReactTestRenderer.create(
-      <Heading5
+      <Heading6
         theme={theme}
         textColor="#FFFFFF"
       />,
