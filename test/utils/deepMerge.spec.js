@@ -5,6 +5,7 @@ describe('deepMerge', () => {
     foo: 'foo',
     bar: 'bar',
     arr: [1, 2, 3],
+    undef: undefined,
     baz: {
       foo: 'foo',
       bar: 'bar',
@@ -61,5 +62,16 @@ describe('deepMerge', () => {
         foo: 'foo',
       }),
     ).toEqual(master);
+  });
+
+  test('should overwrite undefined', () => {
+    expect(
+      deepMerge(master, {
+        undef: 'foo',
+      }),
+    ).toEqual({
+      ...master,
+      undef: 'foo',
+    });
   });
 });
