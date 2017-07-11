@@ -11,11 +11,20 @@ export default {
       topBottom: '10px',
       leftRight: '15px',
     },
-    iconSizeLarge: 24,
-    iconSizeMedium: 16,
-    iconSizeSmall: 8,
     borderSize: 1,
     shadowSize: 1,
+  },
+  dimensions: {
+    icon: {
+      large: '24px',
+      medium: '16px',
+      small: '8px',
+    },
+    height: {
+      large: '40px',
+      medium: '30px',
+      small: '20px',
+    },
   },
   font: {
     size: 16,
@@ -79,7 +88,7 @@ export default {
     defaultSelected: '#ededed',
     primarySelected: '#d8d8d8',
     secondarySelected: '#bababa',
-    defaultBorder: '#ededed',
+    defaultBorder: '#bababa',
     primaryBorder: '#0e3b59',
     secondaryBorder: '#186e93',
     disabled: 'lightgray',

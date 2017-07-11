@@ -36,7 +36,7 @@ describe('Input', () => {
         borderColor="white"
       />,
     );
-    expect(component).toHaveStyleRule('border', '1px solid white');
+    expect(component).toHaveStyleRule('border', '2px solid white');
     expect(spy).toHaveBeenCalled();
   });
 

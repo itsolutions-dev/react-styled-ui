@@ -1,4 +1,5 @@
 export Button from './Button';
+export Checkbox from './Checkbox';
 export Code from './Code';
 export Divider from './Divider';
 export Footer from './Footer';
@@ -19,7 +20,7 @@ export List from './List';
 export ListItem from './ListItem';
 export Select from './Select';
 export Text from './Text';
-export TextArea from './TextArea';
+export Textarea from './Textarea';
 export Toolbar from './Toolbar';
 export ThemeProvider from './ThemeProvider';
 export theme from './theme';

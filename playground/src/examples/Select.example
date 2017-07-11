@@ -1,0 +1,5 @@
+<Select>
+  <option>Foo</option>
+  <option selected>Bar</option>
+  <option>Baz</option>
+</Select>

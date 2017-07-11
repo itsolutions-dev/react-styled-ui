@@ -13,7 +13,7 @@ describe('getOpacity', () => {
   });
 
   test('should get opacity for readonly component', () => {
-    expect(getOpacity({ readonly: true })).toEqual(disabledOpacity);
+    expect(getOpacity({ readOnly: true })).toEqual(disabledOpacity);
   });
 
   test('should get opacity from props', () => {

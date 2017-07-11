@@ -3,14 +3,16 @@ import {
   getTextColor,
   getBackgroundColor,
   getOpacity,
+  getBorder,
 } from './utils/';
 
-const TextArea = styledComponent('textarea', css`
-  width: 100%;
+const Textarea = styledComponent('textarea', css`
+  border: 2px solid ${props => getBorder(props)};
+  border-radius: 0;
   background-color: ${props => getBackgroundColor(props)};
   color: ${props => getTextColor(props)};
   opacity: ${props => getOpacity(props)};
   padding: 8px;
 `);
 
-export default TextArea;
+export default Textarea;

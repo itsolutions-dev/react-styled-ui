@@ -5,5 +5,6 @@ export getHover from './getHover';
 export getBackgroundColor from './getBackgroundColor';
 export getTextColor from './getTextColor';
 export getBorder from './getBorder';
+export getHeight from './getHeight';
 export hexToRgb from './hexToRgb';
 export getColorWithAlpha from './getColorWithAlpha';
