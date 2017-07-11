@@ -11,7 +11,7 @@ describe('Code', () => {
     expect(component).toBeDefined();
   });
 
-  test('should have an a tag', () => {
+  test('should have a code tag', () => {
     const component = ReactTestRenderer.create(<Code theme={theme} />).toJSON();
     expect(component.type).toEqual('code');
   });

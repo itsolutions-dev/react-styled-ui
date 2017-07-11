@@ -10,6 +10,7 @@ export Heading3 from './Heading3';
 export Heading4 from './Heading4';
 export Heading5 from './Heading5';
 export Heading6 from './Heading6';
+export Image from './Image';
 export InlineText from './InlineText';
 export Input from './Input';
 export Label from './Label';

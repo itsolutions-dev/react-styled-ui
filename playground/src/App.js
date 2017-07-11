@@ -26,7 +26,9 @@ export default () => (
     <Body>
       <Heading size={1}>Playground</Heading>
       {
-        getExamples().map(x => (
+        getExamples().sort((x, y) => {
+          return x.name > y.name ? 1 : -1;
+        }).map(x => (
           <Playground
             key={x.name}
             code={x.code}
