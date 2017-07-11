@@ -1,10 +1,10 @@
-import styled from 'styled-components';
+import styledComponent, { css } from './styledComponent';
 import { getBackgroundColor, getBorder } from './utils/';
 
-const Toolbar = styled.div`
+const Toolbar = styledComponent('div', css`
   padding: 15px;
   background-color:  ${props => getBackgroundColor(props)};
   border: 1px solid ${props => getBorder(props)};
-`;
+`);
 
 export default Toolbar;

@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styledComponent, { css } from './styledComponent';
 
-const Text = styled.p`
+const Text = styledComponent('p', css`
   font-size:12px;
   font-family: sans-serif;
   font-weight: 300;
@@ -8,6 +8,6 @@ const Text = styled.p`
   padding:22px;
   margin:0;
   color:#999;
-`;
+`);
 
 export default Text;

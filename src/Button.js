@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styledComponent, { css } from './styledComponent';
 import {
   getBackgroundColor,
   getTextColor,
@@ -7,7 +7,7 @@ import {
   getHover,
 } from './utils/';
 
-const Button = styled.button`
+const Button = styledComponent('button', css`
   padding: 6px 12px;
   margin-left:5px;
   font-size: ${props => props.theme.font.size};
@@ -25,6 +25,6 @@ const Button = styled.button`
   &:focus {
     outline:0;
   }
-`;
+`);
 
 export default Button;

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styledComponent, { css } from './styledComponent';
 import {
   getTextColor,
   getBackgroundColor,
@@ -6,7 +6,7 @@ import {
   getBorder,
 } from './utils/';
 
-const Input = styled.input`
+const Input = styledComponent('input', css`
   box-shadow: none;
   border: 1px solid ${props => getBorder(props)};
   border-radius: 0;
@@ -17,6 +17,6 @@ const Input = styled.input`
   background-color: ${props => getBackgroundColor(props)};
   color: ${props => getTextColor(props)};
   opacity: ${props => getOpacity(props)};
-`;
+`);
 
 export default Input;

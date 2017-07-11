@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styledComponent, { css } from './styledComponent';
 import {
   getTextColor,
   getBackgroundColor,
@@ -6,7 +6,7 @@ import {
   getHover,
 } from './utils/';
 
-const Link = styled.a`
+const Link = styledComponent('a', css`
   margin: 0 1em;
   background-color: ${props => props.transparent === true ? 'transparent' : getBackgroundColor(props)};
   color: ${props => getTextColor(props)};
@@ -15,6 +15,6 @@ const Link = styled.a`
   &:hover {
     background-color: ${props => props.transparent === true ? 'transparent' : getHover(props)};
   }
-`;
+`);
 
 export default Link;

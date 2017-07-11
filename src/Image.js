@@ -1,9 +1,9 @@
-import styled from 'styled-components';
+import styledComponent, { css } from './styledComponent';
 
-const Image = styled.img`
+const Image = styledComponent('img', css`
   display: block;
   max-width: 100%;
   height: auto;
-`;
+`);
 
 export default Image;
