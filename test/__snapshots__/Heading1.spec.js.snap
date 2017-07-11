@@ -1,6 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Heading1 should match snapshot 1`] = `
+.gRTzbq {
+  font-size: 29px;
+  font-weight: 900;
+  line-height: 450;
+  color: #FFFFFF;
+}
+
 <h1
   className="sc-bdVaJa gRTzbq"
 />

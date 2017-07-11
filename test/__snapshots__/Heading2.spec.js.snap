@@ -1,6 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Heading2 should match snapshot 1`] = `
+.laixKo {
+  font-size: 29px;
+  font-weight: 900;
+  line-height: 450;
+  color: rgba(255, 255, 255, 0.9);
+}
+
 <h2
   className="sc-bdVaJa laixKo"
 />

@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import {
-    getTextColor,
-    getBackgroundColor,
-    getOpacity,
-    getBorder,
+  getTextColor,
+  getBackgroundColor,
+  getOpacity,
+  getBorder,
 } from './utils/';
 
 const Input = styled.input`
