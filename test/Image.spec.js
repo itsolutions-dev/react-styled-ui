@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
 import 'styled-components-test-utils/lib/jest';
-import theme from '../src/theme ';
+import theme from '../src/theme';
 import Image from '../src/Image';
 
 describe('Image', () => {
