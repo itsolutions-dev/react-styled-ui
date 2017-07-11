@@ -1,5 +1,4 @@
 export Button from './Button';
-export Checkbox from './Checkbox';
 export Code from './Code';
 export Divider from './Divider';
 export Footer from './Footer';
