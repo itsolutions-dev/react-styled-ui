@@ -1,4 +1,5 @@
 export Button from './Button';
+export Code from './Code';
 export Divider from './Divider';
 export Footer from './Footer';
 export getTheme from './getTheme';
