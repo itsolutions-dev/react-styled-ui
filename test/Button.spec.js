@@ -112,4 +112,24 @@ describe('Button', () => {
       expect(spy).toHaveBeenCalled();
     });
   });
+
+  test('should have a default radius', () => {
+    const component = ReactTestRenderer.create(
+      <Button
+        theme={theme}
+        radius
+      />,
+    );
+    expect(component).toHaveStyleRule('border-radius', '8px');
+  });
+
+  test('should have a radius', () => {
+    const component = ReactTestRenderer.create(
+      <Button
+        theme={theme}
+        radius={20}
+      />,
+    );
+    expect(component).toHaveStyleRule('border-radius', '20px');
+  });
 });
