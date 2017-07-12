@@ -1,3 +1,4 @@
+export Blockquote from './Blockquote';
 export Button from './Button';
 export Code from './Code';
 export Divider from './Divider';
