@@ -1,19 +1,18 @@
 import styledComponent, { css } from './styledComponent';
 import {
   getTextColor,
-  getBackgroundColor,
   getOpacity,
   getHover,
 } from './utils/';
 
 const Link = styledComponent('a', css`
-  margin: 0 1em;
-  background-color: ${props => props.transparent === true ? 'transparent' : getBackgroundColor(props)};
+  text-decoration:none;
+  font-size: ${props => props.theme.font.size};
   color: ${props => getTextColor(props)};
   opacity: ${props => getOpacity(props)};
 
-  &:hover {
-    background-color: ${props => props.transparent === true ? 'transparent' : getHover(props)};
+  &:hover{
+    color: ${props => getHover(props)};
   }
 `);
 

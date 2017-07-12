@@ -27,7 +27,7 @@ export default {
     },
   },
   font: {
-    size: 16,
+    size: '16px',
     weight: 200,
     lineHeight: 18,
     family: 'Roboto, sans-serif',
