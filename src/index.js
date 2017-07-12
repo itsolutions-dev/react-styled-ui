@@ -1,6 +1,7 @@
 export Avatar from './Avatar';
 export Blockquote from './Blockquote';
 export Button from './Button';
+export ButtonGroup from './ButtonGroup';
 export Code from './Code';
 export Divider from './Divider';
 export Footer from './Footer';
