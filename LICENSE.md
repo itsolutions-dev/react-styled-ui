@@ -1,5 +1,7 @@
 The MIT License (MIT)
 
+Copyright for portions of project react-styled-ui are held by Brent Jackson, 2015 – 2016 as part of project Rebass. All other copyright for project react-styled-ui are held by IT Solutions srl.
+
 Copyright (c) 2017 IT Solutions srl
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

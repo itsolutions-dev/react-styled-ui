@@ -28,6 +28,8 @@ Every release, along with the migration instructions, is documented on the Githu
 - [github/adribusc](https://github.com/adribusc)
 
 ## Copyright and License
+Copyright for portions of project react-styled-ui are held by Brent Jackson, 2015 – 2016 as part of project Rebass. All other copyright for project react-styled-ui are held by IT Solutions srl.
+
 Copyright (c) 2017, IT Solutions srl.
 
 react-styled-ui source code is licensed under the [MIT License](https://github.com/itsolutions-dev/react-styled-ui/blob/master/LICENSE.md).
