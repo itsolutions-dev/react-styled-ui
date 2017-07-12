@@ -1,0 +1,4 @@
+<Card>
+  <BackgroundImage src="http://lorempixel.com/400/200/nature/" />
+  <Heading size={3}>This is a Card</Heading>
+</Card>

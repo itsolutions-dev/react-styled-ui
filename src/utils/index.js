@@ -8,3 +8,4 @@ export getBorder from './getBorder';
 export getHeight from './getHeight';
 export hexToRgb from './hexToRgb';
 export getColorWithAlpha from './getColorWithAlpha';
+export getSizeOrDefault from './getSizeOrDefault';
