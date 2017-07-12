@@ -1,3 +1,4 @@
+export Avatar from './Avatar';
 export Blockquote from './Blockquote';
 export Button from './Button';
 export Code from './Code';
