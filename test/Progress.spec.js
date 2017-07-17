@@ -49,7 +49,24 @@ describe('Progress', () => {
     expect({
       component,
       modifier: '&::-moz-progress-bar',
-    }).toHaveStyleRule('background-color', 'white');
+    }).toHaveStyleRule('background-color', 'black');
     expect(spy).toHaveBeenCalled();
+  });
+
+  test('should support color prop', () => {
+    const component = ReactTestRenderer.create(
+      <Progress
+        theme={theme}
+        color="white"
+      />,
+    );
+    expect({
+      component,
+      modifier: '&::-webkit-progress-value',
+    }).toHaveStyleRule('background-color', 'white');
+    expect({
+      component,
+      modifier: '&::-moz-progress-bar',
+    }).toHaveStyleRule('background-color', 'white');
   });
 });

@@ -14,10 +14,10 @@ const Label = styledComponent('progress', css`
     background-color: ${props => getBackgroundColor(props)};
   }
   &::-webkit-progress-value {
-    background-color: ${props => getTextColor(props)};
+    background-color: ${props => props.color !== undefined ? props.color : getTextColor(props)};
   }
   &::-moz-progress-bar {
-    background-color: ${props => getBackgroundColor(props)};
+    background-color: ${props => props.color !== undefined ? props.color : getTextColor(props)};
   }
 `);
 
