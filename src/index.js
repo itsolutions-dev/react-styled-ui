@@ -23,6 +23,7 @@ export Label from './Label';
 export Link from './Link';
 export List from './List';
 export ListItem from './ListItem';
+export Progress from './Progress';
 export Select from './Select';
 export Text from './Text';
 export Textarea from './Textarea';
