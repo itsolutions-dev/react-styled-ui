@@ -113,16 +113,6 @@ describe('Button', () => {
     });
   });
 
-  test('should have a default radius', () => {
-    const component = ReactTestRenderer.create(
-      <Button
-        theme={theme}
-        radius
-      />,
-    );
-    expect(component).toHaveStyleRule('border-radius', '8px');
-  });
-
   test('should have a radius', () => {
     const component = ReactTestRenderer.create(
       <Button

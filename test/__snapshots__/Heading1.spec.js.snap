@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Heading1 should match snapshot 1`] = `
-.AGloF {
+.djHfoV {
   font-size: 29px;
   font-weight: 900;
   line-height: 450;
@@ -9,6 +9,6 @@ exports[`Heading1 should match snapshot 1`] = `
 }
 
 <h1
-  className="sc-bdVaJa AGloF"
+  className="sc-bdVaJa djHfoV"
 />
 `;
