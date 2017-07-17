@@ -52,8 +52,16 @@ describe('styledComponent', () => {
     expect(component).toHaveStyleRule('opacity', '0.7');
   });
 
-  test('should handle margin', () => {
+  test('should handle numeric margin', () => {
+    const component = ReactTestRenderer.create(<Button margin={7} />);
+    expect(component).toHaveStyleRule('margin', '7px');
+  });
 
+  test('should handle string margin', () => {
+    let component = ReactTestRenderer.create(<Button margin="7em" />);
+    expect(component).toHaveStyleRule('margin', '7em');
+    component = ReactTestRenderer.create(<Button margin="7em 8em" />);
+    expect(component).toHaveStyleRule('margin', '7em 8em');
   });
 
   test('should handle marginTop', () => {
@@ -88,8 +96,16 @@ describe('styledComponent', () => {
     expect(component).toHaveStyleRule('margin-bottom', '7px');
   });
 
-  test('should handle padding', () => {
+  test('should handle numeric padding', () => {
+    const component = ReactTestRenderer.create(<Button padding={7} />);
+    expect(component).toHaveStyleRule('padding', '7px');
+  });
 
+  test('should handle string padding', () => {
+    let component = ReactTestRenderer.create(<Button padding="7em" />);
+    expect(component).toHaveStyleRule('padding', '7em');
+    component = ReactTestRenderer.create(<Button padding="7em 8em" />);
+    expect(component).toHaveStyleRule('padding', '7em 8em');
   });
 
   test('should handle paddingTop', () => {
