@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Heading3 should match snapshot 1`] = `
-.fsGgdm {
+.c0 {
   font-size: 29px;
   font-weight: 900;
   line-height: 450;
@@ -9,6 +9,6 @@ exports[`Heading3 should match snapshot 1`] = `
 }
 
 <h3
-  className="sc-bdVaJa fsGgdm"
+  className="c0"
 />
 `;

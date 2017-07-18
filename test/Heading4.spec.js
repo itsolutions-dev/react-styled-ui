@@ -73,6 +73,6 @@ describe('Heading4', () => {
         textColor="#FFFFFF"
       />,
     ).toJSON();
-    expect(component).toMatchStyledComponentsSnapshot();
+    expect(component).toMatchSnapshot();
   });
 });

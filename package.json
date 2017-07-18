@@ -82,13 +82,13 @@
     "react-dom": "15.5.4",
     "react-test-renderer": "15.5.4",
     "rimraf": "2.6.1",
-    "styled-components": "2.1.0",
-    "styled-components-test-utils": "0.2.2",
+    "styled-components": "2.1.1",
+    "styled-components-test-utils": "0.3.0",
     "webpack": "3.0.0"
   },
   "peerDependencies": {
     "react": "^15.5.4",
-    "styled-components": "^2.1.0"
+    "styled-components": "^2.1.1"
   },
   "npmName": "react-styled-ui",
   "npmFileMap": [
