@@ -1,5 +1,12 @@
 export default {
   radius: '3px',
+  media: {
+    xs: '(min-width: 480px)',
+    sm: '(min-width: 736px)',
+    md: '(min-width: 980px)',
+    lg: '(min-width: 1280px)',
+    xl: '(min-width: 1690px)',
+  },
   spacing: {
     margin: '8px',
     padding: {

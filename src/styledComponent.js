@@ -103,15 +103,32 @@ const sharedProps = [
   },
 ];
 
-const common = css`
-  ${props => sharedProps.map(({ prop, getValue, handler }) => {
-    const value = props[prop];
-    if (value === undefined) return '';
+const getStyleForProps = props => Object.keys(props)
+  .map((x) => {
+    const value = props[x];
+    const sharedProp = sharedProps.find(y => y.prop === x);
+    if (sharedProp === undefined) return '';
+
+    const { prop, getValue, handler } = sharedProp;
     if (handler !== undefined) return handler(value);
 
     const propName = prop.replace(/([A-Z])/g, '-$1').toLowerCase();
     return `${propName}: ${getValue !== undefined ? getValue(value) : value};`;
-  })}
+  }).join('\n');
+
+const common = css`
+  ${getStyleForProps}
+  ${(props) => {
+    if (props.media === undefined) return '';
+    return Object.keys(props.theme.media).map((x) => {
+      if (props.media[x] === undefined) return '';
+      return `
+        @media ${props.theme.media[x]} {
+          ${getStyleForProps(props.media[x])}
+        }
+      `;
+    }).reduce((acc, cur) => acc + cur, '');
+  }}
 `;
 
 const styledComponent = (tag, template) => (
