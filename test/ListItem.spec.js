@@ -16,7 +16,7 @@ describe('ListItem', () => {
     expect(component.type).toEqual('li');
   });
 
-  test('should have a background-color', () => {
+  test('should have a background', () => {
     const spy = jest.spyOn(utils, 'getBackgroundColor');
     const component = ReactTestRenderer.create(
       <ListItem
@@ -24,7 +24,7 @@ describe('ListItem', () => {
         backgroundColor="white"
       />,
     );
-    expect(component).toHaveStyleRule('background-color', 'white');
+    expect(component).toHaveStyleRule('background', 'white');
     expect(spy).toHaveBeenCalled();
   });
 

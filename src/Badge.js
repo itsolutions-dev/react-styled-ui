@@ -8,7 +8,7 @@ import {
 
 const Badge = styledComponent('div', css`
   color: ${props => getTextColor(props)};
-  background-color: ${props => getBackgroundColor(props)};
+  background: ${props => getBackgroundColor(props)};
   font-size: 12px;
   padding: 2px 6px;
   font-weight: bold;

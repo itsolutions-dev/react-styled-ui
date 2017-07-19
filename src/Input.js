@@ -14,12 +14,12 @@ const Input = styledComponent('input', css`
   min-height: ${props => getHeight(props)};
   padding-left: 8px;
   padding-right: 8px;
-  background-color: ${props => getBackgroundColor(props)};
+  background: ${props => getBackgroundColor(props)};
   color: ${props => getTextColor(props)};
   opacity: ${props => getOpacity(props)};
 
   &::placeholder {
-    color: ${props => getTextColor(props)};
+    color: ${props => props.color !== undefined ? props.color : getTextColor(props)};
     opacity: 0.54;
   }
 `);

@@ -17,7 +17,7 @@ describe('Button', () => {
     expect(component.type).toEqual('button');
   });
 
-  test('should have a background-color', () => {
+  test('should have a background', () => {
     const spy = jest.spyOn(utils, 'getBackgroundColor');
     const component = ReactTestRenderer.create(
       <Button
@@ -25,7 +25,7 @@ describe('Button', () => {
         backgroundColor="white"
       />,
     );
-    expect(component).toHaveStyleRule('background-color', 'white');
+    expect(component).toHaveStyleRule('background', 'white');
     expect(spy).toHaveBeenCalled();
   });
 
@@ -65,7 +65,7 @@ describe('Button', () => {
     expect(spy).toHaveBeenCalled();
   });
 
-  test('should have a background-color hover', () => {
+  test('should have a background hover', () => {
     const spy = jest.spyOn(utils, 'getHover');
     const component = ReactTestRenderer.create(
       <Button
@@ -76,7 +76,7 @@ describe('Button', () => {
     expect({
       component,
       modifier: '&:hover',
-    }).toHaveStyleRule('background-color', 'white');
+    }).toHaveStyleRule('background', 'white');
     expect(spy).toHaveBeenCalled();
   });
 
@@ -103,7 +103,7 @@ describe('Button', () => {
     expect(component).toHaveStyleRule('font-size', '12');
     expect(component).toHaveStyleRule('border', '0');
     expect(component).toHaveStyleRule('color', 'blue');
-    expect(component).toHaveStyleRule('background-color', 'green');
+    expect(component).toHaveStyleRule('background', 'green');
     expect({
       component,
       modifier: '&:hover',

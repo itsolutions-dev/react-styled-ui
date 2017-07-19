@@ -11,13 +11,13 @@ const Label = styledComponent('progress', css`
   overflow: hidden;
   appearance: none;
   &::-webkit-progress-bar {
-    background-color: ${props => getBackgroundColor(props)};
+    background: ${props => props.background !== undefined ? props.background : getBackgroundColor(props)};
   }
   &::-webkit-progress-value {
-    background-color: ${props => props.color !== undefined ? props.color : getTextColor(props)};
+    background: ${props => props.color !== undefined ? props.color : getTextColor(props)};
   }
   &::-moz-progress-bar {
-    background-color: ${props => props.color !== undefined ? props.color : getTextColor(props)};
+    background: ${props => props.color !== undefined ? props.color : getTextColor(props)};
   }
 `);
 

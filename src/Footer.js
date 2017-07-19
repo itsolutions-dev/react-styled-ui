@@ -6,7 +6,7 @@ import {
 
 const Footer = styledComponent('footer', css`
   padding: 15px;
-  background-color:  ${props => getBackgroundColor(props)};
+  background:  ${props => getBackgroundColor(props)};
   border: 1px solid ${props => getBorder(props)};
 `);
 

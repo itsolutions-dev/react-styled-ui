@@ -16,7 +16,7 @@ describe('Toolbar', () => {
     expect(component.type).toEqual('div');
   });
 
-  test('should have a background-color', () => {
+  test('should have a background', () => {
     const spy = jest.spyOn(utils, 'getBackgroundColor');
     const component = ReactTestRenderer.create(
       <Toolbar
@@ -24,7 +24,7 @@ describe('Toolbar', () => {
         backgroundColor="white"
       />,
     );
-    expect(component).toHaveStyleRule('background-color', 'white');
+    expect(component).toHaveStyleRule('background', 'white');
     expect(spy).toHaveBeenCalled();
   });
 

@@ -16,7 +16,7 @@ describe('Input', () => {
     expect(component.type).toEqual('input');
   });
 
-  test('should have a background-color', () => {
+  test('should have a background', () => {
     const spy = jest.spyOn(utils, 'getBackgroundColor');
     const component = ReactTestRenderer.create(
       <Input
@@ -24,7 +24,7 @@ describe('Input', () => {
         backgroundColor="white"
       />,
     );
-    expect(component).toHaveStyleRule('background-color', 'white');
+    expect(component).toHaveStyleRule('background', 'white');
     expect(spy).toHaveBeenCalled();
   });
 
@@ -62,5 +62,18 @@ describe('Input', () => {
     );
     expect(component).toHaveStyleRule('opacity', '0.75');
     expect(spy).toHaveBeenCalled();
+  });
+
+  test('should have the provided placeholder color', () => {
+    const component = ReactTestRenderer.create(
+      <Input
+        theme={theme}
+        color="white"
+      />,
+    );
+    expect({
+      component,
+      modifier: '&::placeholder',
+    }).toHaveStyleRule('color', 'white');
   });
 });

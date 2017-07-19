@@ -3,7 +3,7 @@ import { getBackgroundColor, getBorder } from './utils/';
 
 const Toolbar = styledComponent('div', css`
   padding: 15px;
-  background-color:  ${props => getBackgroundColor(props)};
+  background:  ${props => getBackgroundColor(props)};
   border: 1px solid ${props => getBorder(props)};
 `);
 

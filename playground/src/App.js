@@ -7,7 +7,7 @@ import ThemeProvider from '../../src/ThemeProvider';
 const { Heading } = components;
 
 const Body = styled.div`
-  background-color: #FFFFFF;
+  background: #FFFFFF;
 `;
 
 const filePathToComponentName = file =>

@@ -13,7 +13,7 @@ const Button = styledComponent('button', css`
   margin-left: 5px;
   margin-right: 5px;
   font-size: ${props => props.theme.font.size};
-  background-color: ${props =>
+  background: ${props =>
     props.reverse === true ? getTextColor(props) : getBackgroundColor(props)};
   color: ${props =>
     props.reverse === true ? getBackgroundColor(props) : getTextColor(props)};
@@ -23,7 +23,7 @@ const Button = styledComponent('button', css`
   ${props => props.radius !== undefined ? `border-radius: ${getSizeOrDefault(props.radius, '8px')}` : ''};
   &:hover {
     ${props => props.reverse === true ? `color: ${getHover(props)}` : ''};
-    ${props => props.reverse === true ? '' : `background-color: ${getHover(props)}`};
+    ${props => props.reverse === true ? '' : `background: ${getHover(props)}`};
   }
   &:focus {
     outline: none;

@@ -9,7 +9,7 @@ import {
 const Textarea = styledComponent('textarea', css`
   border: 2px solid ${props => getBorder(props)};
   border-radius: 0;
-  background-color: ${props => getBackgroundColor(props)};
+  background: ${props => getBackgroundColor(props)};
   color: ${props => getTextColor(props)};
   opacity: ${props => getOpacity(props)};
   padding: 8px;

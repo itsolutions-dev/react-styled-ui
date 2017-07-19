@@ -29,7 +29,7 @@ describe('Progress', () => {
     expect(component).toHaveStyleRule('border-radius', '7px');
   });
 
-  test('should have a background-color', () => {
+  test('should have a background', () => {
     const spy = jest.spyOn(utils, 'getBackgroundColor');
     const component = ReactTestRenderer.create(
       <Progress
@@ -41,16 +41,29 @@ describe('Progress', () => {
     expect({
       component,
       modifier: '&::-webkit-progress-bar',
-    }).toHaveStyleRule('background-color', 'white');
+    }).toHaveStyleRule('background', 'white');
     expect({
       component,
       modifier: '&::-webkit-progress-value',
-    }).toHaveStyleRule('background-color', 'black');
+    }).toHaveStyleRule('background', 'black');
     expect({
       component,
       modifier: '&::-moz-progress-bar',
-    }).toHaveStyleRule('background-color', 'black');
+    }).toHaveStyleRule('background', 'black');
     expect(spy).toHaveBeenCalled();
+  });
+
+  test('should have the provided background', () => {
+    const component = ReactTestRenderer.create(
+      <Progress
+        theme={theme}
+        background="white"
+      />,
+    );
+    expect({
+      component,
+      modifier: '&::-webkit-progress-bar',
+    }).toHaveStyleRule('background', 'white');
   });
 
   test('should support color prop', () => {
@@ -63,10 +76,10 @@ describe('Progress', () => {
     expect({
       component,
       modifier: '&::-webkit-progress-value',
-    }).toHaveStyleRule('background-color', 'white');
+    }).toHaveStyleRule('background', 'white');
     expect({
       component,
       modifier: '&::-moz-progress-bar',
-    }).toHaveStyleRule('background-color', 'white');
+    }).toHaveStyleRule('background', 'white');
   });
 });
