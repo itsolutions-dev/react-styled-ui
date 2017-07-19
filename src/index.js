@@ -1,5 +1,6 @@
 export Avatar from './Avatar';
 export BackgroundImage from './BackgroundImage';
+export Badge from './Badge';
 export Blockquote from './Blockquote';
 export Button from './Button';
 export ButtonCircle from './ButtonCircle';
