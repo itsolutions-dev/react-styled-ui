@@ -31,6 +31,7 @@ export Select from './Select';
 export Text from './Text';
 export Textarea from './Textarea';
 export Toolbar from './Toolbar';
+export Tooltip from './Tooltip';
 export Truncate from './Truncate';
 export ThemeProvider from './ThemeProvider';
 export theme from './theme';
