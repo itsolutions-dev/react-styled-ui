@@ -21,7 +21,7 @@ describe('StyleProvider', () => {
 
   test('should provide font family', () => {
     const component = ReactTestRenderer.create(<StyleProvider theme={theme} />);
-    expect(component).toHaveStyleRule('font-family', 'Roboto, sans-serif');
+    expect(component).toHaveStyleRule('font-family', 'Roboto,sans-serif');
   });
 
   test('should inject font inherits for inputs', () => {

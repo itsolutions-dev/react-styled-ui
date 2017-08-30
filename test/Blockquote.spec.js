@@ -42,7 +42,7 @@ describe('Blockquote', () => {
         backgroundColor="#11C1B9"
       />,
     );
-    expect(component).toHaveStyleRule('border-left', '5px solid rgba(17, 193, 185, 0.3)');
+    expect(component).toHaveStyleRule('border-left', '5px solid rgba(17,193,185,0.3)');
     expect(spy).toHaveBeenCalled();
   });
 

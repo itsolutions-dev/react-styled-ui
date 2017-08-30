@@ -5,7 +5,7 @@ exports[`Heading6 should match snapshot 1`] = `
   font-size: 29px;
   font-weight: 900;
   line-height: 450;
-  color: rgba(255, 255, 255, 0.54);
+  color: rgba(255,255,255,0.54);
 }
 
 <h6

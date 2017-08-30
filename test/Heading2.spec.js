@@ -32,7 +32,7 @@ describe('Heading2', () => {
         textColor="#FFFFFF"
       />,
     );
-    expect(component).toHaveStyleRule('color', 'rgba(255, 255, 255, 0.9)');
+    expect(component).toHaveStyleRule('color', 'rgba(255,255,255,0.9)');
     expect(spy).toHaveBeenCalled();
   });
 

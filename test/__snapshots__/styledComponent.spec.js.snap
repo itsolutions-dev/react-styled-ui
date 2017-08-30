@@ -1,5 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`styledComponent should handle media 1`] = `
+.c0 {
+  width: 250px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (min-width:500px) {
+  .c0 {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+}
+
+<button
+  className="c0"
+  media={
+    Object {
+      "foo": Object {
+        "paddingY": 7,
+      },
+    }
+  }
+/>
+`;
+
 exports[`styledComponent should ignore media if not present 1`] = `
 .c0 {
   width: 250px;
