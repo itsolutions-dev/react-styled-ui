@@ -9,3 +9,4 @@ export getHeight from './getHeight';
 export hexToRgb from './hexToRgb';
 export getColorWithAlpha from './getColorWithAlpha';
 export getSizeOrDefault from './getSizeOrDefault';
+export guid from './guid';
