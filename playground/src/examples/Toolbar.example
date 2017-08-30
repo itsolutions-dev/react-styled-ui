@@ -1,0 +1,11 @@
+<Toolbar primary>
+	<Link primary marginX={4}>
+		Hello
+	</Link>
+	<Link  primary marginX={4} marginLeft="auto">
+		Beep
+	</Link>
+	<Link primary marginX={4}>
+		Boop
+	</Link>
+</Toolbar>

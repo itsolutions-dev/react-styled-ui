@@ -27,16 +27,4 @@ describe('Toolbar', () => {
     expect(component).toHaveStyleRule('background', 'white');
     expect(spy).toHaveBeenCalled();
   });
-
-  test('should have a border', () => {
-    const spy = jest.spyOn(utils, 'getBorder');
-    const component = ReactTestRenderer.create(
-      <Toolbar
-        theme={theme}
-        borderColor="white"
-      />,
-    );
-    expect(component).toHaveStyleRule('border', '1px solid white');
-    expect(spy).toHaveBeenCalled();
-  });
 });
