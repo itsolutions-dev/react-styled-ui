@@ -7,6 +7,7 @@ export ButtonCircle from './ButtonCircle';
 export ButtonGroup from './ButtonGroup';
 export Card from './Card';
 export Code from './Code';
+export Container from './Container';
 export Divider from './Divider';
 export Footer from './Footer';
 export getTheme from './getTheme';
