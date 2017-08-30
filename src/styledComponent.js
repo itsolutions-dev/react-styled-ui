@@ -131,12 +131,15 @@ const common = css`
   }}
 `;
 
-const styledComponent = (tag, template) => (
-  styled[tag]`
-    ${template}
+const styledComponent = ({
+  component,
+  style,
+  props = {},
+}) =>
+  styled[component].attrs(props) `
+    ${style}
     ${common}
-  `
-);
+  `;
 
 export { css };
 export default styledComponent;

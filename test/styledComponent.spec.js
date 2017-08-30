@@ -2,12 +2,15 @@ import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
 import 'styled-components-test-utils/lib/jest';
 import theme from '../src/theme';
-import styledComponent, { css } from '../src/styledComponent';
+import styled, { css } from '../src/styledComponent';
 
 describe('styledComponent', () => {
-  const Button = styledComponent('button', css`
-    width: 250px;
-  `);
+  const Button = styled({
+    component: 'button',
+    style: css`
+      width: 250px;
+    `,
+  });
 
   test('should export css', () => {
     expect(css).toBeDefined();
@@ -191,5 +194,19 @@ describe('styledComponent', () => {
       />,
     );
     expect(component).toMatchSnapshot();
+  });
+
+  test('should create a component with attrs', () => {
+    const ButtonWithAttrs = styled({
+      component: 'button',
+      props: {
+        size: 'small',
+      },
+      style: css`
+        width: 250px;
+      `,
+    });
+    const component = ReactTestRenderer.create(<ButtonWithAttrs theme={theme} />).toJSON();
+    expect(component.props.size).toEqual('small');
   });
 });

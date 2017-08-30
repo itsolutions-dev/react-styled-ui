@@ -1,9 +1,12 @@
-import styledComponent, { css } from './styledComponent';
+import styled, { css } from './styledComponent';
 
-const Image = styledComponent('img', css`
-  display: block;
-  max-width: 100%;
-  height: auto;
-`);
+const Image = styled({
+  component: 'img',
+  style: css`
+    display: block;
+    max-width: 100%;
+    height: auto;
+  `,
+});
 
 export default Image;

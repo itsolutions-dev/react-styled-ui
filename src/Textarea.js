@@ -1,4 +1,4 @@
-import styledComponent, { css } from './styledComponent';
+import styled, { css } from './styledComponent';
 import {
   getTextColor,
   getBackgroundColor,
@@ -6,13 +6,16 @@ import {
   getBorder,
 } from './utils/';
 
-const Textarea = styledComponent('textarea', css`
-  border: 2px solid ${props => getBorder(props)};
-  border-radius: 0;
-  background: ${props => getBackgroundColor(props)};
-  color: ${props => getTextColor(props)};
-  opacity: ${props => getOpacity(props)};
-  padding: 8px;
-`);
+const Textarea = styled({
+  component: 'textarea',
+  style: css`
+    border: 2px solid ${props => getBorder(props)};
+    border-radius: 0;
+    background: ${props => getBackgroundColor(props)};
+    color: ${props => getTextColor(props)};
+    opacity: ${props => getOpacity(props)};
+    padding: 8px;
+  `,
+});
 
 export default Textarea;
