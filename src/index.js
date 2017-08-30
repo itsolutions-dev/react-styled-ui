@@ -25,6 +25,7 @@ export Label from './Label';
 export Link from './Link';
 export List from './List';
 export ListItem from './ListItem';
+export Message from './Message';
 export Progress from './Progress';
 export Select from './Select';
 export Text from './Text';
