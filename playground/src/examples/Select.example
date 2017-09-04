@@ -1,5 +1,5 @@
-<Select>
-  <option>Foo</option>
-  <option selected>Bar</option>
-  <option>Baz</option>
+<Select defaultValue="bar">
+  <option value="foo">Foo</option>
+  <option value="bar">Bar</option>
+  <option value="baz">Baz</option>
 </Select>

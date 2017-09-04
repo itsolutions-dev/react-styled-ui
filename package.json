@@ -88,7 +88,7 @@
   },
   "peerDependencies": {
     "react": "^15.5.4",
-    "styled-components": "^2.1.1"
+    "styled-components": "^2.1.2"
   },
   "npmName": "react-styled-ui",
   "npmFileMap": [

@@ -1,14 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
 import Playground from './Playground';
 import * as components from '../../src/';
 import ThemeProvider from '../../src/ThemeProvider';
 
 const { Heading } = components;
-
-const Body = styled.div`
-  background: #FFFFFF;
-`;
 
 const filePathToComponentName = file =>
   file.replace(/\.\/(examples\/)?/, '').replace(/\.example$/, '');
@@ -43,7 +38,7 @@ const getExamples = () => {
 
 export default () => (
   <ThemeProvider>
-    <Body>
+    <div style={{ background: '#FFFFFF' }}>
       <Heading size={1}>Playground</Heading>
       {
         getExamples()
@@ -58,6 +53,6 @@ export default () => (
             />
           ))
       }
-    </Body>
+    </div>
   </ThemeProvider>
 );
