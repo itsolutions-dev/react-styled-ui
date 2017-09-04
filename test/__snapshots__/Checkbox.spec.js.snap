@@ -1,0 +1,220 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox should be primary by default 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0.5em;
+}
+
+.c0 * {
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c0 > input[type=checkbox] {
+  visibility: hidden;
+}
+
+.c0 > input[type=checkbox] + label {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: .6em 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+  -webkit-transition: color 250ms cubic-bezier(.4,.0,.23,1);
+  transition: color 250ms cubic-bezier(.4,.0,.23,1);
+}
+
+.c0 > input[type=checkbox] + label > span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 1em;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: 2px solid #bababa;
+  border-radius: 2px;
+  cursor: pointer;
+  -webkit-transition: all 250ms cubic-bezier(.4,.0,.23,1);
+  transition: all 250ms cubic-bezier(.4,.0,.23,1);
+}
+
+.c0 > input[type=checkbox] + label:hover,
+.c0 input[type=checkbox]:focus + label {
+  color: #fff;
+}
+
+.c0 > input[type=checkbox] + label:hover > span,
+.c0 input[type=checkbox]:focus + label > span {
+  background: rgba(255,255,255,.1);
+}
+
+.c0 > input[type=checkbox]:checked + label > span {
+  border: .6em solid #1a5a99;
+  -webkit-animation: erhqVB 200ms cubic-bezier(.4,.0,.23,1);
+  animation: erhqVB 200ms cubic-bezier(.4,.0,.23,1);
+}
+
+.c0 > input[type=checkbox]:checked + label > span:before {
+  content: '';
+  position: absolute;
+  top: .5em;
+  left: .25em;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 0% 100%;
+  -ms-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  -webkit-animation: jNRJGA 125ms 250ms cubic-bezier(.4,.0,.23,1) forwards;
+  animation: jNRJGA 125ms 250ms cubic-bezier(.4,.0,.23,1) forwards;
+}
+
+<div
+  className="c0"
+>
+  <input
+    id="id"
+    primary={true}
+    theme={
+      Object {
+        "dimensions": Object {
+          "height": Object {
+            "large": "40px",
+            "medium": "30px",
+            "small": "20px",
+          },
+          "icon": Object {
+            "large": "24px",
+            "medium": "16px",
+            "small": "8px",
+          },
+        },
+        "font": Object {
+          "family": "Roboto, sans-serif",
+          "lineHeight": 18,
+          "size": "16px",
+          "weight": 200,
+        },
+        "h1": Object {
+          "fontSize": "28px",
+          "fontWeight": 600,
+          "lineHeight": "30px",
+        },
+        "h2": Object {
+          "fontSize": "24px",
+          "fontWeight": 400,
+          "lineHeight": "28px",
+        },
+        "h3": Object {
+          "fontSize": "20px",
+          "fontWeight": 300,
+          "lineHeight": "24px",
+        },
+        "h4": Object {
+          "fontSize": "18px",
+          "fontWeight": 300,
+          "lineHeight": "20px",
+        },
+        "h5": Object {
+          "fontSize": "14px",
+          "fontWeight": 300,
+          "lineHeight": "16px",
+        },
+        "h6": Object {
+          "fontSize": "12px",
+          "fontWeight": 300,
+          "lineHeight": "14px",
+        },
+        "media": Object {
+          "lg": "(min-width: 1280px)",
+          "md": "(min-width: 980px)",
+          "sm": "(min-width: 736px)",
+          "xl": "(min-width: 1690px)",
+          "xs": "(min-width: 480px)",
+        },
+        "palette": Object {
+          "default": "#ffffff",
+          "defaultBorder": "#bababa",
+          "defaultDisabled": "#ededed",
+          "defaultHover": "#f5f7f7",
+          "defaultSelected": "#ededed",
+          "defaultText": "#4c4c4c",
+          "defaultTextDisabled": "#cecece",
+          "disabled": "lightgray",
+          "primary": "#1a5a99",
+          "primaryBorder": "#bababa",
+          "primaryDisabled": "#9ebbd7",
+          "primaryHover": "#164872",
+          "primarySelected": "#d8d8d8",
+          "primaryText": "#ffffff",
+          "primaryTextDisabled": "#c6d8e7",
+          "secondary": "#5dcebb",
+          "secondaryBorder": "#bababa",
+          "secondaryDisabled": "#9ad1ec",
+          "secondaryHover": "#217bad",
+          "secondarySelected": "#bababa",
+          "secondaryText": "#195382",
+          "secondaryTextDisabled": "#cae5f4",
+          "shadow": "black",
+        },
+        "radius": "3px",
+        "spacing": Object {
+          "borderSize": 1,
+          "margin": "8px",
+          "padding": Object {
+            "bottom": "8px",
+            "default": "8px",
+            "left": "10px",
+            "leftRight": "15px",
+            "right": "10px",
+            "top": "8px",
+            "topBottom": "10px",
+          },
+          "shadowSize": 1,
+        },
+        "transitions": Object {
+          "ease": ".25,.1,.25,1",
+          "easeIn": ".42,0,1,1",
+          "easeInOut": ".42,0,.58,1",
+          "easeOut": "0,0,.58,1",
+          "linear": "0,0,1,1",
+        },
+      }
+    }
+    type="checkbox"
+  />
+  <label
+    htmlFor="id"
+  >
+    <span />
+  </label>
+</div>
+`;

@@ -1,0 +1,5 @@
+<div>
+  <Radio name="foo" value="foo" defaultChecked /> Foo<br />
+  <Radio name="foo" value="bar" /> Bar<br />
+  <Radio name="foo" value="baz" /> Baz
+</div>

@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 import { getSizeOrDefault } from './utils/';
 
 const getSize = size => getSizeOrDefault(size, '0px');
@@ -141,5 +141,5 @@ const styledComponent = ({
     ${common}
   `;
 
-export { css };
+export { css, keyframes };
 export default styledComponent;
