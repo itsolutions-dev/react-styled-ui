@@ -26,6 +26,7 @@ export Label from './Label';
 export Link from './Link';
 export List from './List';
 export ListItem from './ListItem';
+export Loader from './Loader';
 export Message from './Message';
 export Progress from './Progress';
 export Radio from './Radio';
