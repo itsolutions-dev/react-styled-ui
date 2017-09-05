@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Overlay should have correct styles 1`] = `
+.c0 {
+  background: rgba(0,0,0,0.5);
+  height: 100%;
+  width: 100%;
+}
+
+<div
+  className="c0"
+/>
+`;

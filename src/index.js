@@ -31,6 +31,7 @@ export List from './List';
 export ListItem from './ListItem';
 export Loader from './Loader';
 export Message from './Message';
+export Overlay from './Overlay';
 export Progress from './Progress';
 export Radio from './Radio';
 export Relative from './Relative';

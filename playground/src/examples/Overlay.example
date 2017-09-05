@@ -1,0 +1,11 @@
+<div>
+  <ButtonCircle onClick={() => setState({ show: true})}>
+    Toggle overlay
+  </ButtonCircle>
+  { state.show && (
+      <Fixed zIndex={99999} top bottom left right>
+        <Overlay onClick={() => setState({ show: false})}/>
+      </Fixed>
+    )
+  }
+</div>

@@ -41,6 +41,7 @@ export default class Playground extends React.Component {
           style={{
             position: 'relative',
             minHeight: 100,
+            width: '100%',
           }}
         />
       </LiveProvider>
