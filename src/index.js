@@ -30,6 +30,7 @@ export Message from './Message';
 export Progress from './Progress';
 export Radio from './Radio';
 export Select from './Select';
+export Slider from './Slider';
 export Text from './Text';
 export Textarea from './Textarea';
 export Toggle from './Toggle';

@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Slider should be primary by default 1`] = `
+.c0 {
+  display: block;
+  cursor: pointer;
+  color: inherit;
+  border-radius: 99999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #bababa;
+}
+
+.c0::-webkit-slider-thumb {
+  width: 16px;
+  height: 16px;
+  background-color: currentcolor;
+  border: 0;
+  border-radius: 99999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #1a5a99;
+}
+
+.c0:active::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+<input
+  className="c0"
+  id="id"
+  type="range"
+/>
+`;
