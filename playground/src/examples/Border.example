@@ -1,0 +1,8 @@
+<Border
+	margin={20}
+	padding={10}
+  top
+  bottom={4}
+>
+  Hello World!
+</Border>

@@ -3,6 +3,7 @@ export Avatar from './Avatar';
 export BackgroundImage from './BackgroundImage';
 export Badge from './Badge';
 export Blockquote from './Blockquote';
+export Border from './Border';
 export Button from './Button';
 export ButtonCircle from './ButtonCircle';
 export ButtonGroup from './ButtonGroup';
