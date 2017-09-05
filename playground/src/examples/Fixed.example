@@ -1,0 +1,17 @@
+<div>
+  <ButtonCircle onClick={() => setState({ show: !state.show })}>
+    Toggle fixed
+  </ButtonCircle>
+  { state.show && (
+    <Fixed
+      background="#C0C0C0"
+      height={100}
+      width={100}
+      bottom={16}
+      right={16}
+    >
+      Hello world!
+    </Fixed>
+    )
+  }
+</div>

@@ -11,22 +11,39 @@ const getCode = code => `
   </ThemeProvider>
 `.trim().replace(/^/, '\t');
 
-type PlaygroundProps = {
-  code: string,
-  scope: Object
-};
+export default class Playground extends React.Component {
 
-export default ({ code, scope, ...others }: PlaygroundProps) =>
-  (<LiveProvider
-    code={getCode(code)}
-    scope={{
-      ThemeProvider,
-      theme,
-      ...scope,
-    }}
-    {...others}
-  >
-    <LiveEditor />
-    <LiveError />
-    <LivePreview />
-  </LiveProvider>);
+  state = {};
+
+  props: {
+    code: string,
+    scope: Object
+  };
+
+  render() {
+    const { code, scope, ...others } = this.props;
+    return (
+      <LiveProvider
+        code={getCode(code)}
+        scope={{
+          ThemeProvider,
+          theme,
+          state: this.state,
+          // eslint-disable-next-line
+          setState: this.setState.bind(this),
+          ...scope,
+        }}
+        {...others}
+      >
+        <LiveEditor />
+        <LiveError />
+        <LivePreview
+          style={{
+            position: 'relative',
+            minHeight: 100,
+          }}
+        />
+      </LiveProvider>
+    );
+  }
+}

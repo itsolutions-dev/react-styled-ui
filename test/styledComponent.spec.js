@@ -41,6 +41,11 @@ describe('styledComponent', () => {
     expect(component).toHaveStyleRule('background', '#C0C0C0');
   });
 
+  test('should handle zIndex', () => {
+    const component = ReactTestRenderer.create(<Button theme={theme} zIndex="999" />);
+    expect(component).toHaveStyleRule('z-index', '999');
+  });
+
   test('should handle fontSize', () => {
     const component = ReactTestRenderer.create(<Button theme={theme} fontSize={7} />);
     expect(component).toHaveStyleRule('font-size', '7px');

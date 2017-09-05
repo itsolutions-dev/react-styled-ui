@@ -35,6 +35,9 @@ const sharedProps = [
     prop: 'background',
   },
   {
+    prop: 'zIndex',
+  },
+  {
     prop: 'fontSize',
     getValue: getSize,
   },
