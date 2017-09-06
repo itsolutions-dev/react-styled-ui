@@ -8,6 +8,7 @@ describe('Avatar', () => {
   test('should render a Avatar', () => {
     const component = ReactTestRenderer.create(<Avatar theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have an img tag', () => {

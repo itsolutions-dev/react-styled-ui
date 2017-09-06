@@ -12,3 +12,16 @@ exports[`Heading5 should match snapshot 1`] = `
   className="c0"
 />
 `;
+
+exports[`Heading5 should render an Heading5 1`] = `
+.c0 {
+  font-size: 29px;
+  font-weight: 900;
+  line-height: 450;
+  color: rgba(76,76,76,0.54);
+}
+
+<h5
+  className="c0"
+/>
+`;

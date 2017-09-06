@@ -9,6 +9,7 @@ describe('ListItem', () => {
   test('should render a ListItem', () => {
     const component = ReactTestRenderer.create(<ListItem theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have a li tag', () => {

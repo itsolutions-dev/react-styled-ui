@@ -8,6 +8,7 @@ describe('Truncate', () => {
   test('should render a Truncate', () => {
     const component = ReactTestRenderer.create(<Truncate theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have a p tag', () => {

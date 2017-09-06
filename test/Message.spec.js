@@ -9,6 +9,7 @@ describe('Message', () => {
   test('should render a Message', () => {
     const component = ReactTestRenderer.create(<Message theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have a div tag', () => {

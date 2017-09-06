@@ -9,6 +9,7 @@ describe('List', () => {
   test('should render a List', () => {
     const component = ReactTestRenderer.create(<List theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have a ul tag', () => {

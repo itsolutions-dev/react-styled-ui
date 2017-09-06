@@ -17,6 +17,7 @@ describe('Heading2', () => {
   test('should render an Heading2', () => {
     const component = ReactTestRenderer.create(<Heading2 theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have an h2 tag', () => {

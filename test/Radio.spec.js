@@ -14,8 +14,9 @@ const theme = getTheme({
 
 describe('Radio', () => {
   test('should render a Radio', () => {
-    const component = ReactTestRenderer.create(<Radio theme={theme} />);
+    const component = ReactTestRenderer.create(<Radio id="id" theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should render an input with type radio', () => {

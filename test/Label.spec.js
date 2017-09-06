@@ -9,6 +9,7 @@ describe('Label', () => {
   test('should render a Label', () => {
     const component = ReactTestRenderer.create(<Label theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have an a tag', () => {

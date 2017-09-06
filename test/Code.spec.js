@@ -9,6 +9,7 @@ describe('Code', () => {
   test('should render a Code', () => {
     const component = ReactTestRenderer.create(<Code theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have a code tag', () => {

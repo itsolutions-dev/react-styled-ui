@@ -14,8 +14,9 @@ const theme = getTheme({
 
 describe('Checkbox', () => {
   test('should render a Checkbox', () => {
-    const component = ReactTestRenderer.create(<Checkbox theme={theme} />);
+    const component = ReactTestRenderer.create(<Checkbox id="id" theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should render an input with type checkbox', () => {

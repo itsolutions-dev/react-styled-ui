@@ -8,6 +8,7 @@ describe('Overlay', () => {
   test('should render an Overlay', () => {
     const component = ReactTestRenderer.create(<Overlay theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have a div tag', () => {

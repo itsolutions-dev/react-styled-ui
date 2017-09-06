@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackgroundImage should render a BackgroundImage 1`] = `
+.c0 {
+  background-size: cover;
+  background-position: center;
+  height: 0;
+  padding-bottom: 100%;
+  background-image: url();
+}
+
+<div
+  className="c0"
+/>
+`;

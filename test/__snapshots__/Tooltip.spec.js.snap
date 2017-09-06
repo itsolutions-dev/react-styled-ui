@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tooltip should render a Tooltip 1`] = `
+.c0 {
+  display: inline-block;
+  position: relative;
+  color: inherit !important;
+  background: transparent !important;
+}
+
+.c0::before {
+  display: none;
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-4px);
+  -ms-transform: translate(-50%,-4px);
+  transform: translate(-50%,-4px);
+  white-space: pre;
+  font-size: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #fff;
+  background: #000;
+  border-radius: 7px;
+}
+
+.c0::after {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%,8px);
+  -ms-transform: translate(-50%,8px);
+  transform: translate(-50%,8px);
+  content: " ";
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: #000;
+}
+
+.c0:hover::before,
+.c0:hover::after {
+  display: block;
+}
+
+<div
+  className="c0"
+/>
+`;

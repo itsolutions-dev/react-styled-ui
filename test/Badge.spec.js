@@ -12,6 +12,7 @@ describe('Badge', () => {
   test('should render a Badge', () => {
     const component = ReactTestRenderer.create(<Badge theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have a div tag', () => {

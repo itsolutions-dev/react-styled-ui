@@ -9,6 +9,7 @@ describe('Input', () => {
   test('should render a Input', () => {
     const component = ReactTestRenderer.create(<Input theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have an a tag', () => {

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Progress should render a Progress 1`] = `
+.c0 {
+  display: block;
+  height: 6px;
+  border-radius: 7px;
+  overflow: hidden;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.c0::-webkit-progress-bar {
+  background: #ffffff;
+}
+
+.c0::-webkit-progress-value {
+  background: #4c4c4c;
+}
+
+.c0::-moz-progress-bar {
+  background: #4c4c4c;
+}
+
+<progress
+  className="c0"
+/>
+`;

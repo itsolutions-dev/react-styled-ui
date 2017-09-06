@@ -10,6 +10,7 @@ describe('Button', () => {
   test('should render a Button', () => {
     const component = ReactTestRenderer.create(<Button theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have a button tag', () => {

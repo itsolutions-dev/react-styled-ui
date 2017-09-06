@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link should render a Link 1`] = `
+.c0 {
+  text-decoration: none;
+  font-size: 16px;
+  color: #4c4c4c;
+  opacity: 1;
+}
+
+.c0:hover {
+  color: #f5f7f7;
+}
+
+<a
+  className="c0"
+/>
+`;

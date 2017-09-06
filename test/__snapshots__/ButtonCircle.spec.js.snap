@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonCircle should render a ButtonCircle 1`] = `
+.c0 {
+  padding: 8px 16px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 16px;
+  background: #ffffff;
+  color: #4c4c4c;
+  opacity: 1;
+  border: 2px solid #bababa;
+  border-radius: 9999px;
+}
+
+.c0:hover {
+  background: #f5f7f7;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+<button
+  className="c0"
+/>
+`;

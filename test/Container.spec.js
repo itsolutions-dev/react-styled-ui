@@ -9,6 +9,7 @@ describe('Container', () => {
   test('should render a Container', () => {
     const component = ReactTestRenderer.create(<Container theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have a div tag', () => {

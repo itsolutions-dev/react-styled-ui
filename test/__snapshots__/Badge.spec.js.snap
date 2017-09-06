@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge should render a Badge 1`] = `
+.c0 {
+  color: #4c4c4c;
+  background: #ffffff;
+  font-size: 12px;
+  padding: 2px 6px;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 7px;
+}
+
+<div
+  className="c0"
+/>
+`;

@@ -8,6 +8,7 @@ describe('ButtonGroup', () => {
   test('should render a ButtonGroup', () => {
     const component = ReactTestRenderer.create(<ButtonGroup theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have a div tag', () => {

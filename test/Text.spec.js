@@ -8,6 +8,7 @@ describe('Text', () => {
   test('should render a Text', () => {
     const component = ReactTestRenderer.create(<Text theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have a p tag', () => {

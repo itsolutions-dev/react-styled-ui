@@ -9,6 +9,7 @@ describe('Textarea', () => {
   test('should render a Textarea', () => {
     const component = ReactTestRenderer.create(<Textarea theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have a textarea tag', () => {

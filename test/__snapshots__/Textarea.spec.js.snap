@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Textarea should render a Textarea 1`] = `
+.c0 {
+  border: 2px solid #bababa;
+  border-radius: 0;
+  background: #ffffff;
+  color: #4c4c4c;
+  opacity: 1;
+  padding: 8px;
+}
+
+<textarea
+  className="c0"
+/>
+`;

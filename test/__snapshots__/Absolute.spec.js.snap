@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Absolute should render a Absolute 1`] = `
+.c0 {
+  position: absolute;
+}
+
+<div
+  className="c0"
+/>
+`;

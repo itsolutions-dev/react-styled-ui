@@ -14,8 +14,9 @@ const theme = getTheme({
 
 describe('Toggle', () => {
   test('should render a Toggle', () => {
-    const component = ReactTestRenderer.create(<Toggle theme={theme} />);
+    const component = ReactTestRenderer.create(<Toggle id="id" theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should render an input with type checkbox', () => {

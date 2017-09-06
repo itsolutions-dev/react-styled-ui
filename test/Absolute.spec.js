@@ -9,6 +9,7 @@ describe('Absolute', () => {
   test('should render a Absolute', () => {
     const component = ReactTestRenderer.create(<Absolute theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have a div tag', () => {

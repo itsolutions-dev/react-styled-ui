@@ -8,6 +8,7 @@ describe('BackgroundImage', () => {
   test('should render a BackgroundImage', () => {
     const component = ReactTestRenderer.create(<BackgroundImage theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have a div tag', () => {

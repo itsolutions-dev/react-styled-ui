@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Border should render a Border 1`] = `
+.c0 {
+  border-style: solid;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-color: #bababa;
+  color: inherit !important;
+}
+
+<div
+  className="c0"
+/>
+`;

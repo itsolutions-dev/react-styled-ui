@@ -13,6 +13,7 @@ describe('Progress', () => {
   test('should render a Progress', () => {
     const component = ReactTestRenderer.create(<Progress theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have a progress tag', () => {

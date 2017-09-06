@@ -14,6 +14,7 @@ describe('Divider', () => {
   test('should render a Divider', () => {
     const component = ReactTestRenderer.create(<Divider theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have an hr tag', () => {

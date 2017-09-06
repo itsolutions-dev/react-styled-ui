@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image should render an Image 1`] = `
+.c0 {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+<img
+  className="c0"
+/>
+`;

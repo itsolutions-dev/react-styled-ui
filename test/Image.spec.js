@@ -8,6 +8,7 @@ describe('Image', () => {
   test('should render an Image', () => {
     const component = ReactTestRenderer.create(<Image theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have an img tag', () => {

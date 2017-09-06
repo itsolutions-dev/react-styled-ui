@@ -180,3 +180,184 @@ exports[`Toggle should be primary by default 1`] = `
   />
 </div>
 `;
+
+exports[`Toggle should render a Toggle 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  -webkit-align-items: left;
+  -webkit-box-align: left;
+  -ms-flex-align: left;
+  align-items: left;
+}
+
+.c0 > input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.c0 > label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 45px;
+  height: 24px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+.c0 > label:after {
+  content: '';
+  position: absolute;
+  top: 2.5px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 90px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.c0 > input:checked + label {
+  background: #1a5a99;
+}
+
+.c0 > input:checked + label:after {
+  left: calc(100% - 2px);
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.c0 > label:active:after {
+  width: 30px;
+}
+
+<div
+  className="c0"
+>
+  <input
+    id="id"
+    primary={true}
+    theme={
+      Object {
+        "dimensions": Object {
+          "height": Object {
+            "large": "40px",
+            "medium": "30px",
+            "small": "20px",
+          },
+          "icon": Object {
+            "large": "24px",
+            "medium": "16px",
+            "small": "8px",
+          },
+        },
+        "font": Object {
+          "family": "Roboto, sans-serif",
+          "lineHeight": 18,
+          "size": "16px",
+          "weight": 200,
+        },
+        "h1": Object {
+          "fontSize": "28px",
+          "fontWeight": 600,
+          "lineHeight": "30px",
+        },
+        "h2": Object {
+          "fontSize": "24px",
+          "fontWeight": 400,
+          "lineHeight": "28px",
+        },
+        "h3": Object {
+          "fontSize": "20px",
+          "fontWeight": 300,
+          "lineHeight": "24px",
+        },
+        "h4": Object {
+          "fontSize": "18px",
+          "fontWeight": 300,
+          "lineHeight": "20px",
+        },
+        "h5": Object {
+          "fontSize": "14px",
+          "fontWeight": 300,
+          "lineHeight": "16px",
+        },
+        "h6": Object {
+          "fontSize": "12px",
+          "fontWeight": 300,
+          "lineHeight": "14px",
+        },
+        "media": Object {
+          "lg": "(min-width: 1280px)",
+          "md": "(min-width: 980px)",
+          "sm": "(min-width: 736px)",
+          "xl": "(min-width: 1690px)",
+          "xs": "(min-width: 480px)",
+        },
+        "palette": Object {
+          "default": "#ffffff",
+          "defaultBorder": "#bababa",
+          "defaultDisabled": "#ededed",
+          "defaultHover": "#f5f7f7",
+          "defaultSelected": "#ededed",
+          "defaultText": "#4c4c4c",
+          "defaultTextDisabled": "#cecece",
+          "disabled": "lightgray",
+          "primary": "#1a5a99",
+          "primaryBorder": "#bababa",
+          "primaryDisabled": "#9ebbd7",
+          "primaryHover": "#164872",
+          "primarySelected": "#d8d8d8",
+          "primaryText": "#ffffff",
+          "primaryTextDisabled": "#c6d8e7",
+          "secondary": "#5dcebb",
+          "secondaryBorder": "#bababa",
+          "secondaryDisabled": "#9ad1ec",
+          "secondaryHover": "#217bad",
+          "secondarySelected": "#bababa",
+          "secondaryText": "#195382",
+          "secondaryTextDisabled": "#cae5f4",
+          "shadow": "black",
+        },
+        "radius": "3px",
+        "spacing": Object {
+          "borderSize": 1,
+          "margin": "8px",
+          "padding": Object {
+            "bottom": "8px",
+            "default": "8px",
+            "left": "10px",
+            "leftRight": "15px",
+            "right": "10px",
+            "top": "8px",
+            "topBottom": "10px",
+          },
+          "shadowSize": 1,
+        },
+        "transitions": Object {
+          "ease": ".25,.1,.25,1",
+          "easeIn": ".42,0,1,1",
+          "easeInOut": ".42,0,.58,1",
+          "easeOut": "0,0,.58,1",
+          "linear": "0,0,1,1",
+        },
+      }
+    }
+    type="checkbox"
+  />
+  <label
+    htmlFor="id"
+  />
+</div>
+`;

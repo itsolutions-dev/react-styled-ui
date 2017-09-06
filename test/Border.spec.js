@@ -15,6 +15,7 @@ describe('Border', () => {
   test('should render a Border', () => {
     const component = ReactTestRenderer.create(<Border theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should render a div tag', () => {

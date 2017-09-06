@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading should render an Heading 1`] = `
+.c0 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #4c4c4c;
+}
+
+<h1
+  className="c0"
+/>
+`;

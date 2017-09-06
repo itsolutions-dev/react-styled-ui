@@ -9,6 +9,7 @@ describe('Select', () => {
   test('should render a Select', () => {
     const component = ReactTestRenderer.create(<Select theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have a select tag', () => {

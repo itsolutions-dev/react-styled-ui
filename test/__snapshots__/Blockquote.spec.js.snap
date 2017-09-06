@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Blockquote should render a Blockquote 1`] = `
+.c0 {
+  padding: 10px 10px 10px 20px;
+  font-size: 16px;
+  color: #4c4c4c;
+  border-left: 5px solid rgba(255,255,255,0.3);
+}
+
+<blockquote
+  className="c0"
+/>
+`;

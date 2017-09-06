@@ -12,6 +12,7 @@ describe('Tooltip', () => {
   test('should render a Tooltip', () => {
     const component = ReactTestRenderer.create(<Tooltip theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have a div tag', () => {

@@ -9,6 +9,7 @@ describe('Toolbar', () => {
   test('should render a Toolbar', () => {
     const component = ReactTestRenderer.create(<Toolbar theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have a div tag', () => {

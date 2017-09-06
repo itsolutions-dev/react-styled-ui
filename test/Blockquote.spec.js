@@ -15,6 +15,7 @@ describe('Blockquote', () => {
   test('should render a Blockquote', () => {
     const component = ReactTestRenderer.create(<Blockquote theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have a blockquote tag', () => {

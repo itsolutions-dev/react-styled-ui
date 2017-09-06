@@ -8,6 +8,7 @@ describe('Relative', () => {
   test('should render a Relative', () => {
     const component = ReactTestRenderer.create(<Relative theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have a div tag', () => {

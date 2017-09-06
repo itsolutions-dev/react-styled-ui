@@ -43,7 +43,7 @@ const sharedProps = [
   },
   {
     prop: 'radius',
-    handler: size => `border-radius: ${getSize(size)}`,
+    handler: size => `border-radius: ${getSize(size)};`,
   },
   {
     prop: 'opacity',

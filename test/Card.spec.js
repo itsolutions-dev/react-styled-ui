@@ -8,6 +8,7 @@ describe('Card', () => {
   test('should render a Card', () => {
     const component = ReactTestRenderer.create(<Card theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have a div tag', () => {

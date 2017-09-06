@@ -9,6 +9,7 @@ describe('Fixed', () => {
   test('should render a Fixed', () => {
     const component = ReactTestRenderer.create(<Fixed theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have a div tag', () => {

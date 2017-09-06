@@ -16,6 +16,7 @@ describe('Loader', () => {
   test('should render a Loader', () => {
     const component = ReactTestRenderer.create(<Loader theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have a div tag', () => {

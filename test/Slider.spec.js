@@ -16,6 +16,7 @@ describe('Slider', () => {
   test('should render a Slider', () => {
     const component = ReactTestRenderer.create(<Slider theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have a input tag with type range', () => {

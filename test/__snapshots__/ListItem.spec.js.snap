@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem should render a ListItem 1`] = `
+.c0 {
+  margin: 0 1em;
+  background: #ffffff;
+  color: #4c4c4c;
+}
+
+<li
+  className="c0"
+/>
+`;

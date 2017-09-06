@@ -15,6 +15,7 @@ describe('Link', () => {
   test('should render a Link', () => {
     const component = ReactTestRenderer.create(<Link theme={theme} />);
     expect(component).toBeDefined();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('should have an a tag', () => {

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text should render a Text 1`] = `
+.c0 {
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 300;
+  line-height: 18px;
+  padding: 22px;
+  margin: 0;
+  color: #999;
+}
+
+<p
+  className="c0"
+/>
+`;

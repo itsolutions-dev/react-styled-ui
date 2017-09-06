@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer should render a Footer 1`] = `
+.c0 {
+  padding: 15px;
+  background: #ffffff;
+  border: 1px solid #bababa;
+}
+
+<footer
+  className="c0"
+/>
+`;
