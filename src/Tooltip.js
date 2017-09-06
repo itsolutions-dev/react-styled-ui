@@ -10,12 +10,12 @@ const Tooltip = styled({
 
     &::before {
       display: none;
-      content: "${props => props.text !== undefined ? props.text : ''}";
+      content: "${props => props.text !== undefined ? String(props.text).replace(/\n/g, '\\A') : ''}";
       position: absolute;
       bottom: 100%;
       left: 50%;
       transform: translate(-50%, -4px);
-      white-space: nowrap;
+      white-space: pre;
       font-size: 12px;
       padding-top: 4px;
       padding-bottom: 4px;

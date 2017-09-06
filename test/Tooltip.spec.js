@@ -44,6 +44,21 @@ describe('Tooltip', () => {
     }).toHaveStyleRule('content', '"foo"');
   });
 
+  test('should handle newlines in text', () => {
+    const component = ReactTestRenderer.create(
+      <Tooltip
+        theme={theme}
+        text={
+          `Hello
+          World!`}
+      />,
+    );
+    expect({
+      component,
+      modifier: '&::before',
+    }).toHaveStyleRule('content', '"Hello\\A          World!"');
+  });
+
   test('should have the provided background', () => {
     const component = ReactTestRenderer.create(
       <Tooltip
