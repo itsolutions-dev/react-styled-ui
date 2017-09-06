@@ -1,10 +1,10 @@
 import styled, { css } from './styledComponent';
 import {
-  getTextColor,
+  getBorder,
   getBackgroundColor,
 } from './utils/';
 
-const Label = styled({
+const Progress = styled({
   component: 'progress',
   style: css`
     display: block;
@@ -13,15 +13,19 @@ const Label = styled({
     overflow: hidden;
     appearance: none;
     &::-webkit-progress-bar {
-      background: ${props => props.background !== undefined ? props.background : getBackgroundColor(props)};
+      background: ${props => props.background !== undefined ? props.background : getBorder(props)};
     }
     &::-webkit-progress-value {
-      background: ${props => props.color !== undefined ? props.color : getTextColor(props)};
+      background: ${props => props.color !== undefined ? props.color : getBackgroundColor(props)};
     }
     &::-moz-progress-bar {
-      background: ${props => props.color !== undefined ? props.color : getTextColor(props)};
+      background: ${props => props.color !== undefined ? props.color : getBackgroundColor(props)};
     }
   `,
 });
 
-export default Label;
+Progress.defaultProps = {
+  primary: true,
+};
+
+export default Progress;

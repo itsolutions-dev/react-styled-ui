@@ -7,6 +7,10 @@ import * as utils from '../src/utils/';
 
 const theme = getTheme({
   radius: '7px',
+  palette: {
+    primary: 'blue',
+    primaryBorder: 'grey',
+  },
 });
 
 describe('Progress', () => {
@@ -30,28 +34,25 @@ describe('Progress', () => {
     expect(component).toHaveStyleRule('border-radius', '7px');
   });
 
-  test('should have a background', () => {
-    const spy = jest.spyOn(utils, 'getBackgroundColor');
-    const component = ReactTestRenderer.create(
-      <Progress
-        theme={theme}
-        backgroundColor="white"
-        textColor="black"
-      />,
-    );
+  test('should be primary by default', () => {
+    const spies = [
+      jest.spyOn(utils, 'getBorder'),
+      jest.spyOn(utils, 'getBackgroundColor'),
+    ];
+    const component = ReactTestRenderer.create(<Progress theme={theme} />);
     expect({
       component,
       modifier: '&::-webkit-progress-bar',
-    }).toHaveStyleRule('background', 'white');
+    }).toHaveStyleRule('background', 'grey');
     expect({
       component,
       modifier: '&::-webkit-progress-value',
-    }).toHaveStyleRule('background', 'black');
+    }).toHaveStyleRule('background', 'blue');
     expect({
       component,
       modifier: '&::-moz-progress-bar',
-    }).toHaveStyleRule('background', 'black');
-    expect(spy).toHaveBeenCalled();
+    }).toHaveStyleRule('background', 'blue');
+    spies.forEach(spy => expect(spy).toHaveBeenCalled());
   });
 
   test('should have the provided background', () => {

@@ -12,15 +12,15 @@ exports[`Progress should render a Progress 1`] = `
 }
 
 .c0::-webkit-progress-bar {
-  background: #ffffff;
+  background: grey;
 }
 
 .c0::-webkit-progress-value {
-  background: #4c4c4c;
+  background: blue;
 }
 
 .c0::-moz-progress-bar {
-  background: #4c4c4c;
+  background: blue;
 }
 
 <progress
