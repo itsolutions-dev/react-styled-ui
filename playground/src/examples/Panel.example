@@ -1,0 +1,11 @@
+<Panel margin={10}>
+  <PanelHeader>
+    Panel Header
+  </PanelHeader>
+  <PanelBody>
+    Panel body
+  </PanelBody>
+  <PanelFooter>
+    Panel footer
+  </PanelFooter>
+</Panel>

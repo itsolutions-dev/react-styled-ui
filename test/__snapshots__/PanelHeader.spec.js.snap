@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PanelHeader should render a PanelHeader 1`] = `
+.c0 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 20px;
+  color: white;
+  background: blue;
+  border: 1px solid blue;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+<div
+  className="c0"
+/>
+`;

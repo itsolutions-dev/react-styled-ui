@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PanelFooter should render a PanelFooter 1`] = `
+.c0 {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 20px;
+  color: blue;
+  border-top: 1px solid blue;
+  border-left: 1px solid blue;
+  border-bottom: 1px solid blue;
+  border-right: 1px solid blue;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-radius: 0 !important;
+}
+
+<div
+  className="c0"
+/>
+`;
