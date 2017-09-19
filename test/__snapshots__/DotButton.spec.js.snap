@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DotButton should render a DotButton 1`] = `
+.c0 {
+  padding: 0;
+  border-width: 4px;
+  border-style: solid;
+  border-color: transparent;
+  background-clip: padding-box;
+  border-radius: 99999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: rgba(0,0,0,0.25);
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:disabled {
+  opacity: 0.25;
+}
+
+<button
+  className="c0"
+/>
+`;

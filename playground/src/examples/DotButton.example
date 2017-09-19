@@ -1,0 +1,7 @@
+<div>
+  {
+    [1, 2, 3].map(id => (
+      <DotButton active={state.active === id} onClick={() => setState({ active: id })}/>
+    ))
+  }
+</div>
