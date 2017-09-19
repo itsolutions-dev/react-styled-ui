@@ -1,0 +1,22 @@
+<div>
+  <ButtonCircle onClick={() => setState({ show: !state.show })}>
+    Toggle drawer
+  </ButtonCircle>
+  {state.show && (
+		<Fixed
+			top
+			right
+			bottom
+			left
+			onClick={() => setState({ show: !state.show })}
+		/>
+	)}
+  <Drawer
+    open={state.show}
+    position="left"
+    color="white"
+    background="rgba(0,0,0,0.54)"
+  >
+    Hello world!
+  </Drawer>
+</div>

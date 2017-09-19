@@ -12,6 +12,7 @@ export Checkbox from './Checkbox';
 export Code from './Code';
 export Container from './Container';
 export Divider from './Divider';
+export Drawer from './Drawer';
 export Fixed from './Fixed';
 export Footer from './Footer';
 export getTheme from './getTheme';
