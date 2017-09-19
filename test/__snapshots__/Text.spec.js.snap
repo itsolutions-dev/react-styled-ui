@@ -2,13 +2,12 @@
 
 exports[`Text should render a Text 1`] = `
 .c0 {
-  font-size: 12px;
-  font-family: sans-serif;
-  font-weight: 300;
+  font-size: 16px;
+  font-family: Roboto,sans-serif;
+  font-weight: 200;
   line-height: 18px;
-  padding: 22px;
+  color: #4c4c4c;
   margin: 0;
-  color: #999;
 }
 
 <p

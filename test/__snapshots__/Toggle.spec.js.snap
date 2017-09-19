@@ -83,7 +83,7 @@ exports[`Toggle should be primary by default 1`] = `
         },
         "font": Object {
           "family": "Roboto, sans-serif",
-          "lineHeight": 18,
+          "lineHeight": "18px",
           "size": "16px",
           "weight": 200,
         },
@@ -264,7 +264,7 @@ exports[`Toggle should render a Toggle 1`] = `
         },
         "font": Object {
           "family": "Roboto, sans-serif",
-          "lineHeight": 18,
+          "lineHeight": "18px",
           "size": "16px",
           "weight": 200,
         },

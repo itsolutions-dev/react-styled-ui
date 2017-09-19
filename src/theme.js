@@ -36,7 +36,7 @@ export default {
   font: {
     size: '16px',
     weight: 200,
-    lineHeight: 18,
+    lineHeight: '18px',
     family: 'Roboto, sans-serif',
   },
   h1: {
