@@ -35,6 +35,18 @@ describe('Blockquote', () => {
     expect(spy).toHaveBeenCalled();
   });
 
+  test('should have a size', () => {
+    const spy = jest.spyOn(utils, 'getSizeOrDefault');
+    const component = ReactTestRenderer.create(
+      <Blockquote
+        theme={theme}
+        size={20}
+      />,
+    );
+    expect(component).toHaveStyleRule('font-size', '20px');
+    expect(spy).toHaveBeenCalled();
+  });
+
   test('should have a border', () => {
     const spy = jest.spyOn(utils, 'getBackgroundColor');
     const component = ReactTestRenderer.create(
