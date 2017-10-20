@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconButton should render a IconButton 1`] = `
+.c0 {
+  border: #bababa;
+  background-color: #ffffff;
+  opacity: 1;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 0px;
+  padding: 16px;
+  outline: none;
+  position: relative;
+  width: 66px;
+  height: 66px;
+  border-radius: 99999px;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+<button
+  className="c0"
+>
+  <svg
+    style={
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "display": "inline-block",
+        "fill": "currentcolor",
+        "height": 36,
+        "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+        "userSelect": "none",
+        "width": 36,
+      }
+    }
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+    />
+  </svg>
+</button>
+`;
