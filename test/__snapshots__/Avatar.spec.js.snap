@@ -1,13 +1,89 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Avatar should render a Avatar 1`] = `
+exports[`Avatar should match snapshot 1`] = `
 .c0 {
   width: 40px;
   height: 40px;
   border-radius: 99999px;
+  color: rgb(255,255,255);
+  background-color: rgb(188,188,188) !important;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
-<img
+<div
   className="c0"
-/>
+>
+  A
+</div>
+`;
+
+exports[`Avatar should render a Avatar [TXT] 1`] = `
+.c0 {
+  width: 40px;
+  height: 40px;
+  border-radius: 99999px;
+  color: rgb(255,255,255);
+  background-color: rgb(188,188,188) !important;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+<div
+  className="c0"
+>
+  A
+</div>
+`;
+
+exports[`Avatar should render a Img-Avatar 1`] = `
+.c0 > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 99999px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+<div
+  className="c0"
+  src="http://lorempixel.com/400/200/nature/"
+>
+  <img
+    alt="http://lorempixel.com/400/200/nature/"
+    src="http://lorempixel.com/400/200/nature/"
+  />
+</div>
 `;

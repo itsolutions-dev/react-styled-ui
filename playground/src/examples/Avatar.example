@@ -1,4 +1,12 @@
 <Avatar
+  backgroundColor="#FF0000"
+  position="absolute"
+  size={40}
+>
+  A
+</Avatar>
+
+<Avatar
   size={40}
   src="http://lorempixel.com/400/200/nature/"
 />
