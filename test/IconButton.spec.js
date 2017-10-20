@@ -16,7 +16,9 @@ describe('IconButton', () => {
   });
 
   test('should have a button tag [TXT]', () => {
-    const component = ReactTestRenderer.create(<IconButton theme={theme}>{SVGExample}</IconButton>).toJSON();
+    const component = ReactTestRenderer.create(
+      <IconButton theme={theme}>{SVGExample}</IconButton>,
+  ).toJSON();
     expect(component.type).toEqual('button');
   });
 
