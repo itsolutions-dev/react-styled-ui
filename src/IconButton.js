@@ -13,7 +13,7 @@ const IconButton = styled({
   component: 'button',
   style: css`
     border: ${props => getBorder(props)};
-    background-color: ${props => getBackgroundColor(props)};
+    ${props => props.backgroundColor == null ? 'background: none' : `background-color: ${getBackgroundColor(props)}`};
     opacity: ${props => getOpacity(props)};
     box-sizing: border-box;
     cursor: pointer;

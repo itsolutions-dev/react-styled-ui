@@ -25,9 +25,18 @@ describe('IconButton', () => {
   test('should have a default style', () => {
     const component = ReactTestRenderer.create(<IconButton theme={theme}>{SVGExample}</IconButton>);
     expect(component).toHaveStyleRule('border-radius', '99999px');
-    expect(component).toHaveStyleRule('background-color', '#ffffff');
+    expect(component).toHaveStyleRule('background', 'none');
     expect(component).toHaveStyleRule('opacity', '1');
     expect(component).toHaveStyleRule('width', '66px');
     expect(component).toHaveStyleRule('height', '66px');
+  });
+
+  test('should have a custom style', () => {
+    const component = ReactTestRenderer.create(<IconButton backgroundColor="#ff0000" size={33} theme={theme}>{SVGExample}</IconButton>);
+    expect(component).toHaveStyleRule('border-radius', '99999px');
+    expect(component).toHaveStyleRule('background-color', '#ff0000');
+    expect(component).toHaveStyleRule('opacity', '1');
+    expect(component).toHaveStyleRule('width', '33px');
+    expect(component).toHaveStyleRule('height', '33px');
   });
 });

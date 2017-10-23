@@ -3,7 +3,7 @@
 exports[`IconButton should render a IconButton 1`] = `
 .c0 {
   border: #bababa;
-  background-color: #ffffff;
+  background: none;
   opacity: 1;
   box-sizing: border-box;
   cursor: pointer;
