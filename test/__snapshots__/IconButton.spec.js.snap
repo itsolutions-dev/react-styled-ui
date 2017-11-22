@@ -20,6 +20,10 @@ exports[`IconButton should render a IconButton 1`] = `
   outline: none;
 }
 
+.c0:hover {
+  background-color: #f5f7f7;
+}
+
 <button
   className="c0"
 >

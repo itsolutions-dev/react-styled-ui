@@ -29,6 +29,10 @@ describe('IconButton', () => {
     expect(component).toHaveStyleRule('opacity', '1');
     expect(component).toHaveStyleRule('width', '66px');
     expect(component).toHaveStyleRule('height', '66px');
+    expect(({
+      component,
+      modifier: '&:hover',
+    })).toHaveStyleRule('background-color', '#f5f7f7');
   });
 
   test('should have a custom style', () => {
@@ -38,5 +42,14 @@ describe('IconButton', () => {
     expect(component).toHaveStyleRule('opacity', '1');
     expect(component).toHaveStyleRule('width', '33px');
     expect(component).toHaveStyleRule('height', '33px');
+  });
+
+  test('should have a custom background-color onHover', () => {
+    const component = ReactTestRenderer.create(<IconButton backgroundColorHover="#ff0000" theme={theme}>{SVGExample}</IconButton>);
+    expect(component).toHaveStyleRule('background', 'none');
+    expect(({
+      component,
+      modifier: '&:hover',
+    })).toHaveStyleRule('background-color', '#ff0000');
   });
 });
