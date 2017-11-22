@@ -5,6 +5,7 @@ import {
   getSizeOrDefault,
   getBorder,
   getOpacity,
+  getBackgroundColor,
 } from './utils/';
 
 const defaultSize = '66px';
@@ -12,7 +13,11 @@ const IconButton = styled({
   component: 'button',
   style: css`
     border: ${props => getBorder(props)};
-    ${props => props.backgroundColor == null ? 'background: none' : `background-color: ${props.backgroundColor}`};
+    ${props => props.backgroundColor == null &&
+      (props.primary == null || !props.primary) &&
+      (props.secondary == null || !props.secondary) ?
+    'background: none' :
+    `background-color: ${getBackgroundColor(props)}`};
     opacity: ${props => getOpacity(props)};
     box-sizing: border-box;
     cursor: pointer;
@@ -26,9 +31,9 @@ const IconButton = styled({
     &:focus {
       outline: none;
     }
-    ${props => props.backgroundColor == null ? `
+    ${props => props.backgroundColorHover != null ? `
       &:hover {
-        background-color: ${props.backgroundColorHover == null ? '#f5f7f7' : props.backgroundColorHover};
+        background-color: ${props.backgroundColorHover};
       }
     ` : ''}
 

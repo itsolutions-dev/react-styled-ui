@@ -29,10 +29,6 @@ describe('IconButton', () => {
     expect(component).toHaveStyleRule('opacity', '1');
     expect(component).toHaveStyleRule('width', '66px');
     expect(component).toHaveStyleRule('height', '66px');
-    expect(({
-      component,
-      modifier: '&:hover',
-    })).toHaveStyleRule('background-color', '#f5f7f7');
   });
 
   test('should have a custom style', () => {
@@ -51,5 +47,28 @@ describe('IconButton', () => {
       component,
       modifier: '&:hover',
     })).toHaveStyleRule('background-color', '#ff0000');
+  });
+
+  test('should have a primary onHover style', () => {
+    const component = ReactTestRenderer.create(<IconButton secondary backgroundColorHover="#ff0000" theme={theme}>{SVGExample}</IconButton>);
+    expect(component).toHaveStyleRule('border-radius', '99999px');
+    expect(component).toHaveStyleRule('background-color', theme.palette.secondary);
+    expect(component).toHaveStyleRule('opacity', '1');
+    expect(component).toHaveStyleRule('width', '66px');
+    expect(component).toHaveStyleRule('height', '66px');
+    expect(({
+      component,
+      modifier: '&:hover',
+    })).toHaveStyleRule('background-color', '#ff0000');
+  });
+
+  test('should have a primary and secondary false', () => {
+    const component = ReactTestRenderer.create(
+      <IconButton primary={false} secondary={false} theme={theme}>{SVGExample}</IconButton>);
+    expect(component).toHaveStyleRule('border-radius', '99999px');
+    expect(component).toHaveStyleRule('background', 'none');
+    expect(component).toHaveStyleRule('opacity', '1');
+    expect(component).toHaveStyleRule('width', '66px');
+    expect(component).toHaveStyleRule('height', '66px');
   });
 });
