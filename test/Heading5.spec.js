@@ -37,6 +37,19 @@ describe('Heading5', () => {
     expect(spy).toHaveBeenCalled();
   });
 
+  test('should have a opacity', () => {
+    const spy = jest.spyOn(utils, 'getTextColor');
+    const component = ReactTestRenderer.create(
+      <Heading5
+        theme={theme}
+        textColor="#FFFFFF"
+        opacity={0.8}
+      />,
+    );
+    expect(component).toHaveStyleRule('color', 'rgba(255,255,255,0.8)');
+    expect(spy).toHaveBeenCalled();
+  });
+
   test('should have a font-size', () => {
     const component = ReactTestRenderer.create(
       <Heading5
