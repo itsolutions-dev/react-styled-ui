@@ -1,6 +1,7 @@
+import styled from 'styled-components';
 import Button from './Button';
 
-const ButtonCircle = Button.extend`
+const ButtonCircle = styled(Button)`
   border-radius: 9999px;
 `;
 

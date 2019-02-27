@@ -31,6 +31,8 @@ describe('StyleProvider', () => {
           font-family: inherit;
         }
       `,
-    ).toBeAGlobalStyle();
+    ).toBeAGlobalStyle(() => (
+      <StyleProvider theme={theme} />
+    ));
   });
 });

@@ -139,7 +139,12 @@ const styledComponent = ({
   style,
   props = {},
 }) =>
-  styled[component].attrs(props) `
+  styled[component].attrs(styledProps => (
+    Object.keys(props).reduce((newProps, key) => ({
+      ...newProps,
+      [key]: typeof props[key] === 'function' ? props[key](styledProps) : props[key],
+    }), {})
+  )) `
     ${style}
     ${common}
   `;

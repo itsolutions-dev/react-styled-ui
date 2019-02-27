@@ -10,7 +10,7 @@ const Label = styled({
     border-radius: 3px;
     padding: 0.25em 1em;
     margin: 0 1em;
-    background: transparent
+    background: transparent;
     color: ${props => getTextColor(props)};
     opacity: ${props => getOpacity(props)};
   `,
