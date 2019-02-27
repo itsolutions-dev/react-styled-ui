@@ -2,6 +2,7 @@
 
 exports[`Link should render a Link 1`] = `
 .c0 {
+  -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 16px;
   color: #4c4c4c;

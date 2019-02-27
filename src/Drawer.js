@@ -1,3 +1,4 @@
+import styled from 'styled-components';
 import Fixed from './Fixed';
 import {
   getSizeOrDefault,
@@ -10,7 +11,7 @@ const transforms = {
   bottom: 'translateY(100%)',
 };
 
-const Drawer = Fixed.extend`
+const Drawer = styled(Fixed)`
   ${props => `
     overflow-x: hidden;
     overflow-y: auto;

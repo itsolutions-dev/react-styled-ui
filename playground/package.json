@@ -69,10 +69,10 @@
   },
   "dependencies": {
     "babel-polyfill": "6.23.0",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
     "react-live": "1.7.0",
     "react-styled-flexboxgrid": "^2.0.3",
-    "styled-components": "2.1.2"
+    "styled-components": "^4.1.3"
   }
 }
